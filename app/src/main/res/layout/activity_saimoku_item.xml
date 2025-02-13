@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".Saimoku_Item"
+    android:weightSum="350">
+
+        <TextView
+            android:id="@+id/SecondID"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="25"
+            android:text="1"  />
+
+        <TextView
+            android:id="@+id/DaimokuText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="185"
+            android:text="AAAAAA" />
+
+        <TextView
+            android:id="@+id/CompletedDate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="80"
+            android:text="認定日" />
+
+        <TextView
+            android:id="@+id/SyouninsyaName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="60"
+            android:text="認定者" />
+
+
+</LinearLayout>
