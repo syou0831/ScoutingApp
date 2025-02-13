@@ -25,6 +25,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 
 import okhttp3.Call;
+import okhttp3.Callback;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.Response;
@@ -129,20 +130,21 @@ public class SaimokuActivity extends AppCompatActivity {
         final Request request = new Request.Builder().url(uriBuilder.toString()).build();
         final OkHttpClient client = new OkHttpClient.Builder().build();
 
-        client.newCall(request).enqueue(new okhttp3.Callback() {
+        client.newCall(request).enqueue(new Callback() {
             @Override
             public void onResponse(Call call, Response response) throws IOException {
                 final String resString = response.body().string();
-                Log.d(TAG, "onResponse: " + resString);
+                Log.d(TAG, "ABCABConResponse: " + resString);
 
-                final ArrayList<PersonDataItem> ary = PersonJsonHelper.parseJson(resString);
+                final ArrayList<SaimokuDataItem> ary = SaimokuJsonHelper.parseJson(resString);
                 Log.d(TAG, "onResponse: 取得したデータ = " + ary);
 
                 // UI スレッドで更新する
                 Handler handler = new Handler(Looper.getMainLooper());
                 handler.post(() -> {
                     if (ary != null && !ary.isEmpty()) {
-//                        updateUI(ary.get(0)); // 最初のデータを適用
+                        updateUI(ary); // 最初のデータを適用
+                        Log.d(TAG, "AAAAAAAAAAonResponse: " + ary.get(0));
                     } else {
                         Log.d(TAG, "データが空です");
                     }
@@ -156,8 +158,229 @@ public class SaimokuActivity extends AppCompatActivity {
         });
     }
 
-//    private void updateUI(Saimoku_Item person) {
-//        // 各 TextView にデータをセット
-//        ((TextView) findViewById(R.id.GenreText)).setText(person.getSex());
-//    }
+    private void updateUI(ArrayList<SaimokuDataItem> items) {
+        // 各 TextView にデータをセット
+        ArrayList<String> DateArray = new ArrayList<>();
+        ArrayList<String> NameArray = new ArrayList<>();
+
+        for (SaimokuDataItem item : items){
+            DateArray.add(item.getCompletedDate());
+            NameArray.add(item.getSyouninsyaName());
+        }
+
+
+
+
+        ((TextView) findViewById(R.id.CompletedDate2_1_1_1)).setText(DateArray.get(0));
+
+        ((TextView) findViewById(R.id.SyouninsyaName2_1_1_1)).setText(DateArray.get(0));
+        ((TextView) findViewById(R.id.SyouninsyaName2_1_2_1)).setText(DateArray.get(0));
+        ((TextView) findViewById(R.id.SyouninsyaName2_1_3_1)).setText(DateArray.get(0));
+        ((TextView) findViewById(R.id.SyouninsyaName2_1_4_1)).setText(DateArray.get(0));
+        ((TextView) findViewById(R.id.SyouninsyaName2_1_5_1)).setText(DateArray.get(0));
+        ((TextView) findViewById(R.id.SyouninsyaName2_1_6_1)).setText(DateArray.get(0));
+        ((TextView) findViewById(R.id.SyouninsyaName2_2_1_1)).setText(DateArray.get(0));
+        ((TextView) findViewById(R.id.SyouninsyaName2_3_1_1)).setText(DateArray.get(0));
+        ((TextView) findViewById(R.id.SyouninsyaName2_3_2_1)).setText(DateArray.get(0));
+        ((TextView) findViewById(R.id.SyouninsyaName2_3_3_1)).setText(DateArray.get(0));
+        ((TextView) findViewById(R.id.SyouninsyaName2_4_1_1)).setText(DateArray.get(0));
+        ((TextView) findViewById(R.id.SyouninsyaName2_5_1_1)).setText(DateArray.get(0));
+        ((TextView) findViewById(R.id.SyouninsyaName2_6_1_1)).setText(DateArray.get(0));
+        ((TextView) findViewById(R.id.SyouninsyaName3_1_1_1)).setText(DateArray.get(0));
+        ((TextView) findViewById(R.id.SyouninsyaName3_1_2_1)).setText(DateArray.get(0));
+        ((TextView) findViewById(R.id.SyouninsyaName3_1_3_1)).setText(DateArray.get(0));
+        ((TextView) findViewById(R.id.SyouninsyaName3_2_1_1)).setText(DateArray.get(0));
+        ((TextView) findViewById(R.id.SyouninsyaName3_2_2_1)).setText(DateArray.get(0));
+        ((TextView) findViewById(R.id.SyouninsyaName3_2_2_2)).setText(DateArray.get(0));
+        ((TextView) findViewById(R.id.SyouninsyaName3_2_3_1)).setText(DateArray.get(0));
+        ((TextView) findViewById(R.id.SyouninsyaName3_3_1_1)).setText(DateArray.get(0));
+        ((TextView) findViewById(R.id.SyouninsyaName3_3_1_2)).setText(DateArray.get(0));
+        ((TextView) findViewById(R.id.SyouninsyaName3_3_1_3)).setText(DateArray.get(0));
+        ((TextView) findViewById(R.id.SyouninsyaName3_3_1_4)).setText(DateArray.get(0));
+        ((TextView) findViewById(R.id.SyouninsyaName3_3_1_5)).setText(DateArray.get(0));
+        ((TextView) findViewById(R.id.SyouninsyaName3_3_1_6)).setText(DateArray.get(0));
+        ((TextView) findViewById(R.id.SyouninsyaName3_3_2_1)).setText(DateArray.get(0));
+        ((TextView) findViewById(R.id.SyouninsyaName3_3_2_2)).setText(DateArray.get(0));
+        ((TextView) findViewById(R.id.SyouninsyaName3_3_2_3)).setText(DateArray.get(0));
+        ((TextView) findViewById(R.id.SyouninsyaName3_3_3_1)).setText(DateArray.get(0));
+        ((TextView) findViewById(R.id.SyouninsyaName3_3_4_1)).setText(DateArray.get(0));
+        ((TextView) findViewById(R.id.SyouninsyaName3_3_4_2)).setText(DateArray.get(0));
+        ((TextView) findViewById(R.id.SyouninsyaName3_3_5_1)).setText(DateArray.get(0));
+        ((TextView) findViewById(R.id.SyouninsyaName3_3_5_2)).setText(DateArray.get(0));
+        ((TextView) findViewById(R.id.SyouninsyaName3_3_5_3)).setText(DateArray.get(0));
+        ((TextView) findViewById(R.id.SyouninsyaName3_3_6_1)).setText(DateArray.get(0));
+        ((TextView) findViewById(R.id.SyouninsyaName3_3_6_2)).setText(DateArray.get(0));
+        ((TextView) findViewById(R.id.SyouninsyaName3_4_1_1)).setText(DateArray.get(0));
+        ((TextView) findViewById(R.id.SyouninsyaName3_5_1_1)).setText(DateArray.get(0));
+        ((TextView) findViewById(R.id.SyouninsyaName3_6_1_1)).setText(DateArray.get(0));
+        ((TextView) findViewById(R.id.SyouninsyaName4_1_1_1)).setText(DateArray.get(0));
+        ((TextView) findViewById(R.id.SyouninsyaName4_1_2_1)).setText(DateArray.get(0));
+        ((TextView) findViewById(R.id.SyouninsyaName4_1_3_1)).setText(DateArray.get(0));
+        ((TextView) findViewById(R.id.SyouninsyaName4_1_4_1)).setText(DateArray.get(0));
+        ((TextView) findViewById(R.id.SyouninsyaName4_2_1_1)).setText(DateArray.get(0));
+        ((TextView) findViewById(R.id.SyouninsyaName4_2_2_1)).setText(DateArray.get(0));
+        ((TextView) findViewById(R.id.SyouninsyaName4_2_3_1)).setText(DateArray.get(0));
+        ((TextView) findViewById(R.id.SyouninsyaName4_2_3_2)).setText(DateArray.get(0));
+        ((TextView) findViewById(R.id.SyouninsyaName4_3_1_1)).setText(DateArray.get(0));
+        ((TextView) findViewById(R.id.SyouninsyaName4_3_1_2)).setText(DateArray.get(0));
+        ((TextView) findViewById(R.id.SyouninsyaName4_3_1_3)).setText(DateArray.get(0));
+        ((TextView) findViewById(R.id.SyouninsyaName4_3_1_4)).setText(DateArray.get(0));
+        ((TextView) findViewById(R.id.SyouninsyaName4_3_1_5)).setText(DateArray.get(0));
+        ((TextView) findViewById(R.id.SyouninsyaName4_3_1_6)).setText(DateArray.get(0));
+        ((TextView) findViewById(R.id.SyouninsyaName4_3_2_1)).setText(DateArray.get(0));
+        ((TextView) findViewById(R.id.SyouninsyaName4_3_2_2)).setText(DateArray.get(0));
+        ((TextView) findViewById(R.id.SyouninsyaName4_3_2_3)).setText(DateArray.get(0));
+        ((TextView) findViewById(R.id.SyouninsyaName4_3_3_1)).setText(DateArray.get(0));
+        ((TextView) findViewById(R.id.SyouninsyaName4_3_4_1)).setText(DateArray.get(0));
+        ((TextView) findViewById(R.id.SyouninsyaName4_3_4_2)).setText(DateArray.get(0));
+        ((TextView) findViewById(R.id.SyouninsyaName4_3_4_3)).setText(DateArray.get(0));
+        ((TextView) findViewById(R.id.SyouninsyaName4_3_5_1)).setText(DateArray.get(0));
+        ((TextView) findViewById(R.id.SyouninsyaName4_3_5_2)).setText(DateArray.get(0));
+        ((TextView) findViewById(R.id.SyouninsyaName4_3_5_3)).setText(DateArray.get(0));
+        ((TextView) findViewById(R.id.SyouninsyaName4_3_6_1)).setText(DateArray.get(0));
+        ((TextView) findViewById(R.id.SyouninsyaName4_3_6_2)).setText(DateArray.get(0));
+        ((TextView) findViewById(R.id.SyouninsyaName4_3_7_1)).setText(DateArray.get(0));
+        ((TextView) findViewById(R.id.SyouninsyaName4_4_1_1)).setText(DateArray.get(0));
+        ((TextView) findViewById(R.id.SyouninsyaName4_4_2_1)).setText(DateArray.get(0));
+        ((TextView) findViewById(R.id.SyouninsyaName4_5_1_1)).setText(DateArray.get(0));
+        ((TextView) findViewById(R.id.SyouninsyaName4_6_1_1)).setText(DateArray.get(0));
+        ((TextView) findViewById(R.id.SyouninsyaName5_1_1_1)).setText(DateArray.get(0));
+        ((TextView) findViewById(R.id.SyouninsyaName5_1_2_1)).setText(DateArray.get(0));
+        ((TextView) findViewById(R.id.SyouninsyaName5_1_3_1)).setText(DateArray.get(0));
+        ((TextView) findViewById(R.id.SyouninsyaName5_1_4_1)).setText(DateArray.get(0));
+        ((TextView) findViewById(R.id.SyouninsyaName5_2_1_1)).setText(DateArray.get(0));
+        ((TextView) findViewById(R.id.SyouninsyaName5_2_2_1)).setText(DateArray.get(0));
+        ((TextView) findViewById(R.id.SyouninsyaName5_2_2_2)).setText(DateArray.get(0));
+        ((TextView) findViewById(R.id.SyouninsyaName5_3_1_1)).setText(DateArray.get(0));
+        ((TextView) findViewById(R.id.SyouninsyaName5_3_2_1)).setText(DateArray.get(0));
+        ((TextView) findViewById(R.id.SyouninsyaName5_4_1_1)).setText(DateArray.get(0));
+        ((TextView) findViewById(R.id.SyouninsyaName5_5_1_1)).setText(DateArray.get(0));
+        ((TextView) findViewById(R.id.SyouninsyaName5_6_1_1)).setText(DateArray.get(0));
+        ((TextView) findViewById(R.id.SyouninsyaName6_1_1_1)).setText(DateArray.get(0));
+        ((TextView) findViewById(R.id.SyouninsyaName6_2_1_1)).setText(DateArray.get(0));
+        ((TextView) findViewById(R.id.SyouninsyaName6_2_2_1)).setText(DateArray.get(0));
+        ((TextView) findViewById(R.id.SyouninsyaName6_2_3_1)).setText(DateArray.get(0));
+        ((TextView) findViewById(R.id.SyouninsyaName6_3_1_1)).setText(DateArray.get(0));
+        ((TextView) findViewById(R.id.SyouninsyaName6_4_1_1)).setText(DateArray.get(0));
+        ((TextView) findViewById(R.id.SyouninsyaName6_4_2_1)).setText(DateArray.get(0));
+        ((TextView) findViewById(R.id.SyouninsyaName6_5_1_1)).setText(DateArray.get(0));
+        ((TextView) findViewById(R.id.SyouninsyaName6_5_2_1)).setText(DateArray.get(0));
+        ((TextView) findViewById(R.id.SyouninsyaName6_6_1_1)).setText(DateArray.get(0));
+        ((TextView) findViewById(R.id.SyouninsyaName7_1_1_1)).setText(DateArray.get(0));
+        ((TextView) findViewById(R.id.SyouninsyaName7_1_2_1)).setText(DateArray.get(0));
+        ((TextView) findViewById(R.id.SyouninsyaName7_2_1_1)).setText(DateArray.get(0));
+        ((TextView) findViewById(R.id.SyouninsyaName7_2_2_1)).setText(DateArray.get(0));
+        ((TextView) findViewById(R.id.SyouninsyaName7_3_1_1)).setText(DateArray.get(0));
+        ((TextView) findViewById(R.id.SyouninsyaName7_4_1_1)).setText(DateArray.get(0));
+        ((TextView) findViewById(R.id.SyouninsyaName7_4_2_1)).setText(DateArray.get(0));
+        ((TextView) findViewById(R.id.SyouninsyaName7_4_3_1)).setText(DateArray.get(0));
+        ((TextView) findViewById(R.id.SyouninsyaName7_5_1_1)).setText(DateArray.get(0));
+        ((TextView) findViewById(R.id.SyouninsyaName7_6_1_1)).setText(DateArray.get(0));
+
+
+        ((TextView) findViewById(R.id.CompletedDate2_1_1_1)).setText(NameArray.get(0));
+        ((TextView) findViewById(R.id.CompletedDate2_1_2_1)).setText(NameArray.get(0));
+        ((TextView) findViewById(R.id.CompletedDate2_1_3_1)).setText(NameArray.get(0));
+        ((TextView) findViewById(R.id.CompletedDate2_1_4_1)).setText(NameArray.get(0));
+        ((TextView) findViewById(R.id.CompletedDate2_1_5_1)).setText(NameArray.get(0));
+        ((TextView) findViewById(R.id.CompletedDate2_1_6_1)).setText(NameArray.get(0));
+        ((TextView) findViewById(R.id.CompletedDate2_2_1_1)).setText(NameArray.get(0));
+        ((TextView) findViewById(R.id.CompletedDate2_3_1_1)).setText(NameArray.get(0));
+        ((TextView) findViewById(R.id.CompletedDate2_3_2_1)).setText(NameArray.get(0));
+        ((TextView) findViewById(R.id.CompletedDate2_3_3_1)).setText(NameArray.get(0));
+        ((TextView) findViewById(R.id.CompletedDate2_4_1_1)).setText(NameArray.get(0));
+        ((TextView) findViewById(R.id.CompletedDate2_5_1_1)).setText(NameArray.get(0));
+        ((TextView) findViewById(R.id.CompletedDate3_6_1_1)).setText(NameArray.get(0));
+        ((TextView) findViewById(R.id.CompletedDate3_1_1_1)).setText(NameArray.get(0));
+        ((TextView) findViewById(R.id.CompletedDate3_1_2_1)).setText(NameArray.get(0));
+        ((TextView) findViewById(R.id.CompletedDate3_1_3_1)).setText(NameArray.get(0));
+        ((TextView) findViewById(R.id.CompletedDate3_2_1_1)).setText(NameArray.get(0));
+        ((TextView) findViewById(R.id.CompletedDate3_2_2_1)).setText(NameArray.get(0));
+        ((TextView) findViewById(R.id.CompletedDate3_2_2_2)).setText(NameArray.get(0));
+        ((TextView) findViewById(R.id.CompletedDate3_2_3_1)).setText(NameArray.get(0));
+        ((TextView) findViewById(R.id.CompletedDate3_3_1_1)).setText(NameArray.get(0));
+        ((TextView) findViewById(R.id.CompletedDate3_3_1_2)).setText(NameArray.get(0));
+        ((TextView) findViewById(R.id.CompletedDate3_3_1_3)).setText(NameArray.get(0));
+        ((TextView) findViewById(R.id.CompletedDate3_3_1_4)).setText(NameArray.get(0));
+        ((TextView) findViewById(R.id.CompletedDate3_3_1_5)).setText(NameArray.get(0));
+        ((TextView) findViewById(R.id.CompletedDate3_3_1_6)).setText(NameArray.get(0));
+        ((TextView) findViewById(R.id.CompletedDate3_3_2_1)).setText(NameArray.get(0));
+        ((TextView) findViewById(R.id.CompletedDate3_3_2_2)).setText(NameArray.get(0));
+        ((TextView) findViewById(R.id.CompletedDate3_3_2_3)).setText(NameArray.get(0));
+        ((TextView) findViewById(R.id.CompletedDate3_3_3_1)).setText(NameArray.get(0));
+        ((TextView) findViewById(R.id.CompletedDate3_3_4_1)).setText(NameArray.get(0));
+        ((TextView) findViewById(R.id.CompletedDate3_3_4_2)).setText(NameArray.get(0));
+        ((TextView) findViewById(R.id.CompletedDate3_3_5_1)).setText(NameArray.get(0));
+        ((TextView) findViewById(R.id.CompletedDate3_3_5_2)).setText(NameArray.get(0));
+        ((TextView) findViewById(R.id.CompletedDate3_3_5_3)).setText(NameArray.get(0));
+        ((TextView) findViewById(R.id.CompletedDate3_3_6_1)).setText(NameArray.get(0));
+        ((TextView) findViewById(R.id.CompletedDate3_3_6_2)).setText(NameArray.get(0));
+        ((TextView) findViewById(R.id.CompletedDate3_4_1_1)).setText(NameArray.get(0));
+        ((TextView) findViewById(R.id.CompletedDate3_5_1_1)).setText(NameArray.get(0));
+        ((TextView) findViewById(R.id.CompletedDate4_6_1_1)).setText(NameArray.get(0));
+        ((TextView) findViewById(R.id.CompletedDate4_1_1_1)).setText(NameArray.get(0));
+        ((TextView) findViewById(R.id.CompletedDate4_1_2_1)).setText(NameArray.get(0));
+        ((TextView) findViewById(R.id.CompletedDate4_1_3_1)).setText(NameArray.get(0));
+        ((TextView) findViewById(R.id.CompletedDate4_1_4_1)).setText(NameArray.get(0));
+        ((TextView) findViewById(R.id.CompletedDate4_2_1_1)).setText(NameArray.get(0));
+        ((TextView) findViewById(R.id.CompletedDate4_2_2_1)).setText(NameArray.get(0));
+        ((TextView) findViewById(R.id.CompletedDate4_2_3_1)).setText(NameArray.get(0));
+        ((TextView) findViewById(R.id.CompletedDate4_2_3_2)).setText(NameArray.get(0));
+        ((TextView) findViewById(R.id.CompletedDate4_3_1_1)).setText(NameArray.get(0));
+        ((TextView) findViewById(R.id.CompletedDate4_3_1_2)).setText(NameArray.get(0));
+        ((TextView) findViewById(R.id.CompletedDate4_3_1_3)).setText(NameArray.get(0));
+        ((TextView) findViewById(R.id.CompletedDate4_3_1_4)).setText(NameArray.get(0));
+        ((TextView) findViewById(R.id.CompletedDate4_3_1_5)).setText(NameArray.get(0));
+        ((TextView) findViewById(R.id.CompletedDate4_3_1_6)).setText(NameArray.get(0));
+        ((TextView) findViewById(R.id.CompletedDate4_3_2_1)).setText(NameArray.get(0));
+        ((TextView) findViewById(R.id.CompletedDate4_3_2_2)).setText(NameArray.get(0));
+        ((TextView) findViewById(R.id.CompletedDate4_3_2_3)).setText(NameArray.get(0));
+        ((TextView) findViewById(R.id.CompletedDate4_3_3_1)).setText(NameArray.get(0));
+        ((TextView) findViewById(R.id.CompletedDate4_3_4_1)).setText(NameArray.get(0));
+        ((TextView) findViewById(R.id.CompletedDate4_3_4_2)).setText(NameArray.get(0));
+        ((TextView) findViewById(R.id.CompletedDate4_3_4_3)).setText(NameArray.get(0));
+        ((TextView) findViewById(R.id.CompletedDate4_3_5_1)).setText(NameArray.get(0));
+        ((TextView) findViewById(R.id.CompletedDate4_3_5_2)).setText(NameArray.get(0));
+        ((TextView) findViewById(R.id.CompletedDate4_3_5_3)).setText(NameArray.get(0));
+        ((TextView) findViewById(R.id.CompletedDate4_3_6_1)).setText(NameArray.get(0));
+        ((TextView) findViewById(R.id.CompletedDate4_3_6_2)).setText(NameArray.get(0));
+        ((TextView) findViewById(R.id.CompletedDate4_3_7_1)).setText(NameArray.get(0));
+        ((TextView) findViewById(R.id.CompletedDate4_4_1_1)).setText(NameArray.get(0));
+        ((TextView) findViewById(R.id.CompletedDate4_4_2_1)).setText(NameArray.get(0));
+        ((TextView) findViewById(R.id.CompletedDate4_5_1_1)).setText(NameArray.get(0));
+        ((TextView) findViewById(R.id.CompletedDate5_6_1_1)).setText(NameArray.get(0));
+        ((TextView) findViewById(R.id.CompletedDate5_1_1_1)).setText(NameArray.get(0));
+        ((TextView) findViewById(R.id.CompletedDate5_1_2_1)).setText(NameArray.get(0));
+        ((TextView) findViewById(R.id.CompletedDate5_1_3_1)).setText(NameArray.get(0));
+        ((TextView) findViewById(R.id.CompletedDate5_1_4_1)).setText(NameArray.get(0));
+        ((TextView) findViewById(R.id.CompletedDate5_2_1_1)).setText(NameArray.get(0));
+        ((TextView) findViewById(R.id.CompletedDate5_2_2_1)).setText(NameArray.get(0));
+        ((TextView) findViewById(R.id.CompletedDate5_2_2_2)).setText(NameArray.get(0));
+        ((TextView) findViewById(R.id.CompletedDate5_3_1_1)).setText(NameArray.get(0));
+        ((TextView) findViewById(R.id.CompletedDate5_3_2_1)).setText(NameArray.get(0));
+        ((TextView) findViewById(R.id.CompletedDate5_4_1_1)).setText(NameArray.get(0));
+        ((TextView) findViewById(R.id.CompletedDate5_5_1_1)).setText(NameArray.get(0));
+        ((TextView) findViewById(R.id.CompletedDate6_6_1_1)).setText(NameArray.get(0));
+        ((TextView) findViewById(R.id.CompletedDate6_1_1_1)).setText(NameArray.get(0));
+        ((TextView) findViewById(R.id.CompletedDate6_2_1_1)).setText(NameArray.get(0));
+        ((TextView) findViewById(R.id.CompletedDate6_2_2_1)).setText(NameArray.get(0));
+        ((TextView) findViewById(R.id.CompletedDate6_2_3_1)).setText(NameArray.get(0));
+        ((TextView) findViewById(R.id.CompletedDate6_3_1_1)).setText(NameArray.get(0));
+        ((TextView) findViewById(R.id.CompletedDate6_4_1_1)).setText(NameArray.get(0));
+        ((TextView) findViewById(R.id.CompletedDate6_4_2_1)).setText(NameArray.get(0));
+        ((TextView) findViewById(R.id.CompletedDate6_5_1_1)).setText(NameArray.get(0));
+        ((TextView) findViewById(R.id.CompletedDate6_5_2_1)).setText(NameArray.get(0));
+        ((TextView) findViewById(R.id.CompletedDate7_6_1_1)).setText(NameArray.get(0));
+        ((TextView) findViewById(R.id.CompletedDate7_1_1_1)).setText(NameArray.get(0));
+        ((TextView) findViewById(R.id.CompletedDate7_1_2_1)).setText(NameArray.get(0));
+        ((TextView) findViewById(R.id.CompletedDate7_2_1_1)).setText(NameArray.get(0));
+        ((TextView) findViewById(R.id.CompletedDate7_2_2_1)).setText(NameArray.get(0));
+        ((TextView) findViewById(R.id.CompletedDate7_3_1_1)).setText(NameArray.get(0));
+        ((TextView) findViewById(R.id.CompletedDate7_4_1_1)).setText(NameArray.get(0));
+        ((TextView) findViewById(R.id.CompletedDate7_4_2_1)).setText(NameArray.get(0));
+        ((TextView) findViewById(R.id.CompletedDate7_4_3_1)).setText(NameArray.get(0));
+        ((TextView) findViewById(R.id.CompletedDate7_5_1_1)).setText(NameArray.get(0));
+        ((TextView) findViewById(R.id.CompletedDate7_6_1_1)).setText(NameArray.get(0));
+
+    }
 }

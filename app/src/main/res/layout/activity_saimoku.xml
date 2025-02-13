@@ -1365,7 +1365,7 @@
                             android:text="@string/Daimoku_3_3_4_2" />
 
                         <TextView
-                            android:id="@+id/CompletedDate_3_4_2"
+                            android:id="@+id/CompletedDate3_3_4_2"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="80"
@@ -2801,6 +2801,39 @@
 
                     </LinearLayout>
 
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="25"
+                            android:text="1"  />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="185"
+                            android:text="@string/Daimoku_4_4_2_1" />
+
+                        <TextView
+                            android:id="@+id/CompletedDate4_4_2_1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="80"
+                            android:text="YYYY/MM/DD" />
+
+                        <TextView
+                            android:id="@+id/SyouninsyaName4_4_2_1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="60"
+                            android:text="名前" />
+
+                    </LinearLayout>
+
                 </TableLayout>
 
                 <TableLayout
@@ -3318,14 +3351,14 @@
                             android:text="@string/Daimoku_5_3_2_1" />
 
                         <TextView
-                            android:id="@+id/CompletedDate5_3_1_2"
+                            android:id="@+id/CompletedDate5_3_2_1"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="80"
                             android:text="YYYY/MM/DD" />
 
                         <TextView
-                            android:id="@+id/SyouninsyaName5_3_1_2"
+                            android:id="@+id/SyouninsyaName5_3_2_1"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="60"
