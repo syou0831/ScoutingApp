@@ -8,8 +8,37 @@
     android:orientation="vertical"
     tools:context=".SaimokuUpdateActivity">
 
-    <DatePicker
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="10">
 
+        <TextView
+            android:id="@+id/testText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="8"
+            android:text="未入力" />
+
+        <Button
+        android:id="@+id/DatePickerButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+            android:layout_weight="2"
+        android:text="日付入力" />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/NameEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="承認者の名前を入力"/>
+
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="承認の送信"/>
 </LinearLayout>

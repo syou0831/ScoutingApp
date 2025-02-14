@@ -6,25 +6,30 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity" >
-
-    <EditText
-        android:id="@+id/loginID"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="ID"/>
-
-    <EditText
-        android:id="@+id/loginPassword"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:inputType="textPassword"
-        android:hint="パスワード"/>
+    tools:context=".menuActivity">
 
     <Button
-        android:id="@+id/loginSubmitButton"
+        android:id="@+id/button_PersonData"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="ログイン"/>
+        android:text="自分の情報" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="連絡網" />
+
+    <Button
+        android:id="@+id/button_saimoku"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="進級細目" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="活動予定" />
 
 </LinearLayout>

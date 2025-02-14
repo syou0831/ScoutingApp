@@ -46,12 +46,14 @@ public class PersonDataActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+        int PersonID = getIntent().getIntExtra("PersonID", 0);
 
         // サーバーの URL を作成
         Uri.Builder uriBuilder = new Uri.Builder();
         uriBuilder.scheme("http");
         uriBuilder.encodedAuthority("23cm0117.main.jp");
         uriBuilder.path("scouting/JSON/PersonDataJSON.php");
+        uriBuilder.appendQueryParameter("PID", String.valueOf(PersonID));
 
         // データを読み込む
         loadSvData(uriBuilder);
