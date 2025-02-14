@@ -13,6 +13,7 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.textclassifier.TextLinks;
 import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
@@ -25,10 +26,16 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 import androidx.fragment.app.DialogFragment;
 
+import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.Locale;
+
+import okhttp3.Call;
+import okhttp3.OkHttpClient;
+import okhttp3.Request;
+import okhttp3.Response;
 
 public class SaimokuUpdateActivity extends AppCompatActivity {
 
@@ -82,7 +89,7 @@ public class SaimokuUpdateActivity extends AppCompatActivity {
             if(!isEmpty(name) && !isEmpty(date)) {
 
                 Uri.Builder uriBuilder = new Uri.Builder();
-                uriBuilder.scheme("http");
+                uriBuilder.scheme("https");
                 uriBuilder.encodedAuthority("23cm0117.main.jp");
                 uriBuilder.path("scouting/JSON/SaimokuUPDateJSON.php");
                 uriBuilder.appendQueryParameter("PID", String.valueOf(PersonID));
@@ -94,11 +101,40 @@ public class SaimokuUpdateActivity extends AppCompatActivity {
                 uriBuilder.appendQueryParameter("Name", name);
 
                 Log.d("TAG", "JSON_URL: " + uriBuilder);
+
+                Request request = new Request.Builder().url(uriBuilder.toString()).build();
                 uriBuilder.build();
             }
         });
 
     }
+    private void loadSvData(Uri.Builder uriBuilder){
+        Log.d("TAG", "loadSvData: " + uriBuilder.toString());
+        final Request request = new Request.Builder().url(uriBuilder.toString()).build();
+        final OkHttpClient client = new OkHttpClient.Builder().build();
+
+        client.newCall(request).enqueue(new okhttp3.Callback(){
+            @Override
+            public void onResponse(Call call, Response response) throws IOException {
+
+                Log.d("TAG", "onResponse: ZZZZZZ" );
+
+//                final ArrayList<RankItem> ary = JsonHelper.parseJson(resString);
+//                Log.d("TAG", "onResponse: " + ary);
+//                Handler handler = new Handler(Looper.getMainLooper());
+//                handler.post(new Runnable() {
+//                    @Override
+//                    public void run() {
+//                        setListView(ary);
+//                    }
+//                });
+            }
+            @Override
+            public void onFailure(Call call, IOException arg1){
+            }
+        });
+    }
+
 
     private class DialogDateEvent implements DatePickerDialog.OnDateSetListener {
         @Override

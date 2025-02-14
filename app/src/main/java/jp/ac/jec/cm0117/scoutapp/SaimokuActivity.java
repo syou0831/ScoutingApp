@@ -501,6 +501,7 @@ public class SaimokuActivity extends AppCompatActivity {
         });
         ((TextView) findViewById(R.id.CompletedDate4_3_2_2)).setText(DateArray.get(55));
         findViewById(R.id.CompletedDate2_1_1_1).setOnClickListener(v -> {
+            Log.d(TAG, "updateUI: なんでここがうごくの？");
             SaimokuSet(4, 3, 2, 2);
         });
         ((TextView) findViewById(R.id.CompletedDate4_3_2_3)).setText(DateArray.get(56));
