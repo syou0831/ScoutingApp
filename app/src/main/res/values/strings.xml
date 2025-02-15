@@ -2,7 +2,7 @@
     <string name="app_name">ScoutApp</string>
 
     <string-array name="kaikyu">
-        <item>見習い</item>
+        <item>全件表示</item>
         <item>初級</item>
         <item>二級</item>
         <item>一級</item>
@@ -27,54 +27,54 @@
     <string name="kaikyuGenreText_6">冒険と奉仕</string>
     <string name="kaikyuGenreText_7">リーダーシップ</string>
 
-    <string name="GenreText_2_1">基本</string>
-    <string name="GenreText_2_2">健康と発達</string>
-    <string name="GenreText_2_3">スカウト技能</string>
-    <string name="GenreText_2_4">善行</string>
-    <string name="GenreText_2_5">信仰奨励</string>
-    <string name="GenreText_2_6">班長会議</string>
+    <string name="GenreText_2_1">1 基本</string>
+    <string name="GenreText_2_2">2 健康と発達</string>
+    <string name="GenreText_2_3">3 スカウト技能</string>
+    <string name="GenreText_2_4">4 善行</string>
+    <string name="GenreText_2_5">5 信仰奨励</string>
+    <string name="GenreText_2_6">6 班長会議</string>
 
-    <string name="GenreText_3_1">基本</string>
-    <string name="GenreText_3_2">健康と発達</string>
-    <string name="GenreText_3_3">スカウト技能</string>
-    <string name="GenreText_3_4">善行</string>
-    <string name="GenreText_3_5">信仰奨励</string>
-    <string name="GenreText_3_6">班長会議</string>
+    <string name="GenreText_3_1">1 基本</string>
+    <string name="GenreText_3_2">2 健康と発達</string>
+    <string name="GenreText_3_3">3 スカウト技能</string>
+    <string name="GenreText_3_4">4 奉仕</string>
+    <string name="GenreText_3_5">5 信仰奨励</string>
+    <string name="GenreText_3_6">6 班長会議</string>
 
-    <string name="GenreText_4_1">基本</string>
-    <string name="GenreText_4_2">健康と発達</string>
-    <string name="GenreText_4_3">スカウト技能</string>
-    <string name="GenreText_4_4">善行</string>
-    <string name="GenreText_4_5">信仰奨励</string>
-    <string name="GenreText_4_6">班長会議</string>
+    <string name="GenreText_4_1">1 基本</string>
+    <string name="GenreText_4_2">2 健康と発達</string>
+    <string name="GenreText_4_3">3 スカウト技能</string>
+    <string name="GenreText_4_4">4 奉仕</string>
+    <string name="GenreText_4_5">5 信仰奨励</string>
+    <string name="GenreText_4_6">6 班長会議</string>
 
-    <string name="GenreText_5_1">基本</string>
-    <string name="GenreText_5_2">健康と発達</string>
-    <string name="GenreText_5_3">スカウト技能</string>
-    <string name="GenreText_5_4">善行</string>
-    <string name="GenreText_5_5">信仰奨励</string>
-    <string name="GenreText_5_6">班長会議</string>
+    <string name="GenreText_5_1">1 基本</string>
+    <string name="GenreText_5_2">2 健康と発達</string>
+    <string name="GenreText_5_3">3 スカウト技能</string>
+    <string name="GenreText_5_4">4 奉仕</string>
+    <string name="GenreText_5_5">5 信仰奨励</string>
+    <string name="GenreText_5_6">6 班長会議</string>
 
-    <string name="GenreText_6_1">基本</string>
-    <string name="GenreText_6_2">健康と発達</string>
-    <string name="GenreText_6_3">スカウト技能</string>
-    <string name="GenreText_6_4">善行</string>
-    <string name="GenreText_6_5">信仰奨励</string>
-    <string name="GenreText_6_6">班長会議</string>
+    <string name="GenreText_6_1">1 基本</string>
+    <string name="GenreText_6_2">2 健康と発達</string>
+    <string name="GenreText_6_3">3 スカウト技能</string>
+    <string name="GenreText_6_4">4 善行</string>
+    <string name="GenreText_6_5">5 信仰奨励</string>
+    <string name="GenreText_6_6">6 班長会議</string>
 
-    <string name="GenreText_7_1">基本</string>
-    <string name="GenreText_7_2">スカウト技能</string>
-    <string name="GenreText_7_3">スカウト精神</string>
-    <string name="GenreText_7_4">奉仕</string>
-    <string name="GenreText_7_5">信仰</string>
-    <string name="GenreText_7_6">成長と貢献</string>
+    <string name="GenreText_7_1">1 基本</string>
+    <string name="GenreText_7_2">2 スカウト技能</string>
+    <string name="GenreText_7_3">3 スカウト精神</string>
+    <string name="GenreText_7_4">4 奉仕</string>
+    <string name="GenreText_7_5">5 信仰</string>
+    <string name="GenreText_7_6">6 成長と貢献</string>
 
-    <string name="GenreText_8_1">基本</string>
-    <string name="GenreText_8_2">スカウト技能</string>
-    <string name="GenreText_8_3">スカウト精神</string>
-    <string name="GenreText_8_4">奉仕</string>
-    <string name="GenreText_8_5">信仰</string>
-    <string name="GenreText_8_6">成長と貢献</string>
+    <string name="GenreText_8_1">1 基本</string>
+    <string name="GenreText_8_2">2 スカウト技能</string>
+    <string name="GenreText_8_3">3 スカウト精神</string>
+    <string name="GenreText_8_4">4 奉仕</string>
+    <string name="GenreText_8_5">5 信仰</string>
+    <string name="GenreText_8_6">6 成長と貢献</string>
 
     <string name="Daimoku_2_1_1_1">「ちかい」と「おきて」が言える。そのうえで、隊長と話し合う。</string>
     <string name="Daimoku_2_1_2_1">「スカウト章」「モットー」「スローガン」の意味を説明できる。</string>
@@ -92,97 +92,97 @@
 
     <string name="Daimoku_3_1_1_1">「ちかい」と「おきて」について意味を説明でき、その実践に努力していることを隊長に認めてもらう。</string>
     <string name="Daimoku_3_1_2_1">日本の国旗の意味、歴史、仕様を説明でき、班や隊の活動で国旗を正しく掲揚できる。</string>
-    <string name="Daimoku_3_1_3_1">外国旗およびその国のスカウト章を 5か国以上見分ける。</string>
+    <string name="Daimoku_3_1_3_1">外国旗およびその国のスカウト章を5か国以上見分ける。</string>
     <string name="Daimoku_3_2_1_1">体温、脈拍と体調との関係について説明する。</string>
     <string name="Daimoku_3_2_2_1">救急法①日常遭遇しやすい次のような場合の応急手当や対応を説明できる。ア）鼻血 イ）目のちり ウ）やけど エ）指の切り傷 オ）立ちくらみカ）頭痛 キ）蜂、ダニ、毛虫などの虫さされ ク）熱中症</string>
     <string name="Daimoku_3_2_2_2">救急法②三角巾で他の人の頭、手、ひざ、足に包帯を巻き、腕を吊る方法を実演する。</string>
-    <string name="Daimoku_3_2_3_1">隊または班の安全係を 3か月以上担当する。</string>
+    <string name="Daimoku_3_2_3_1">隊または班の安全係を3か月以上担当する。</string>
     <string name="Daimoku_3_3_1_1">ハイキング・読図①16方位と方位角の呼び方を覚え、コンパスで進路を発見する。</string>
-    <string name="Daimoku_3_3_1_2">ハイキング・読図②2万 5千分の１地形図を用いて次のことをする。ア）図上に示された 2つの地点の間の方位角、直線距離、標高差、道路に沿った歩行距離を読む。イ）真北と磁北の違いを説明する。ウ）500m（または１km）ごとの方眼を正確に書き入れた地形図により、6 桁（または 8 桁）座標読みを行い、示された地点に到達する。</string>
+    <string name="Daimoku_3_3_1_2">ハイキング・読図②2万5千分の１地形図を用いて次のことをする。ア）図上に示された 2つの地点の間の方位角、直線距離、標高差、道路に沿った歩行距離を読む。イ）真北と磁北の違いを説明する。ウ）500m（または１km）ごとの方眼を正確に書き入れた地形図により、6桁（または8桁）座標読みを行い、示された地点に到達する。</string>
     <string name="Daimoku_3_3_1_3">ハイキング・読図③三角点、水準点、標高点、等高線とは何かを知り、三角点または水準点の標石を発見する。</string>
     <string name="Daimoku_3_3_1_4">ハイキング・読図④10個以上の地形図記号を覚える。</string>
     <string name="Daimoku_3_3_1_5">ハイキング・読図⑤コンパスを用い、バックベアリングができる。</string>
-    <string name="Daimoku_3_3_1_6">ハイキング・読図⑥地図とコンパスを用いた 10km程度のハイキングを計画し、隊長の指名する 2級以上のスカウト（但し、適任者がいない場合はベンチャースカウトも可）とともに、保護者の同意のもと実施し、報告する。このハイキングは、1.基本(1)および 6.班長会議(1)以外の課目を終了した後に、仕上げの課目として行う。</string>
-    <string name="Daimoku_3_3_2_1">キャンピング①次の野外料理を作る。ア）複数人数分の米飯および味噌汁イ）複数人数分の野菜、肉、魚、玉子を材料とした 2種類以上の料理</string>
+    <string name="Daimoku_3_3_1_6">ハイキング・読図⑥地図とコンパスを用いた10km程度のハイキングを計画し、隊長の指名する2級以上のスカウト（但し、適任者がいない場合はベンチャースカウトも可）とともに、保護者の同意のもと実施し、報告する。このハイキングは、1.基本(1)および6.班長会議(1)以外の課目を終了した後に、仕上げの課目として行う。</string>
+    <string name="Daimoku_3_3_2_1">キャンピング①次の野外料理を作る。ア）複数人数分の米飯および味噌汁イ）複数人数分の野菜、肉、魚、玉子を材料とした2種類以上の料理</string>
     <string name="Daimoku_3_3_2_2">キャンピング②かま、なた、のこぎりを安全に使用でき、手入れと保管ができる。</string>
-    <string name="Daimoku_3_3_2_3">キャンピング③火口、焚き木、薪を作り、マッチ 2本で火を起こし、500mlの水を沸騰させる。</string>
+    <string name="Daimoku_3_3_2_3">キャンピング③火口、焚き木、薪を作り、マッチ2本で火を起こし、500mlの水を沸騰させる。</string>
     <string name="Daimoku_3_3_3_1">ロープ結び①次のロープ結びの使いみちを理解し、実際に使う。ア）巻き結び イ）ねじ結び ウ）引きとけ結び エ）ちぢめ結び オ）腰掛け結び カ）てぐす結び キ）てこ結び ク）張り綱結び</string>
     <string name="Daimoku_3_3_4_1">観察①食用植物、有害植物をそれぞれ 2種以上見分ける。</string>
-    <string name="Daimoku_3_3_4_2">観察②24個の小さな物を 1分間観察し、そのうちの 16個以上を記憶によって答える。</string>
-    <string name="Daimoku_3_3_5_1">計測①100mの距離を誤差 5％以内で歩測する。</string>
-    <string name="Daimoku_3_3_5_2">計測②スカウトペースで、2kmを 15分で移動する。</string>
-    <string name="Daimoku_3_3_5_3">計測③はかりや計量器を使わずに、1合の米、1ℓの水を 15%以内の誤差で量る。</string>
-    <string name="Daimoku_3_3_6_1">通信①片かな手旗信号で 15の原画を理解し、10文字程度の語句を発信、受信できる。</string>
-    <string name="Daimoku_3_3_6_2">通信②追跡記号を 10種以上覚える。</string>
-    <string name="Daimoku_3_4_1_1">デンコーチとして 3か月以上の奉仕、または社会奉仕活動を 3回以上実施する。</string>
+    <string name="Daimoku_3_3_4_2">観察②24個の小さな物を1分間観察し、そのうちの16個以上を記憶によって答える。</string>
+    <string name="Daimoku_3_3_5_1">計測①100mの距離を誤差5％以内で歩測する。</string>
+    <string name="Daimoku_3_3_5_2">計測②スカウトペースで、2kmを15分で移動する。</string>
+    <string name="Daimoku_3_3_5_3">計測③はかりや計量器を使わずに、1合の米、1ℓの水を15%以内の誤差で量る。</string>
+    <string name="Daimoku_3_3_6_1">通信①片かな手旗信号で15の原画を理解し、10文字程度の語句を発信、受信できる。</string>
+    <string name="Daimoku_3_3_6_2">通信②追跡記号を10種以上覚える。</string>
+    <string name="Daimoku_3_4_1_1">デンコーチとして3か月以上の奉仕、または社会奉仕活動を3回以上実施する。</string>
     <string name="Daimoku_3_5_1_1">スカウツオウン・サービスで自分ができる役割を果たし、「ちかい」と「おきて」を日常で実践したこと、実践により感じたことを発表する。</string>
     <string name="Daimoku_3_6_1_1">初級スカウトとして 3か月以上、隊および班活動に進んで参加したことを班長会議で認めてもらう。</string>
 
     <string name="Daimoku_4_1_1_1">「ちかい」と「おきて」の実践に努力していることを日常の生活で示す。</string>
-    <string name="Daimoku_4_1_2_1">姉妹都市または自分が興味を持っている 2か国の民族、文化、通貨、言語を調べ、隊または班集会で話す。</string>
+    <string name="Daimoku_4_1_2_1">姉妹都市または自分が興味を持っている2か国の民族、文化、通貨、言語を調べ、隊または班集会で話す。</string>
     <string name="Daimoku_4_1_3_1">日本の国旗と外国旗を併用して掲揚および設置する時の注意事項を知る。</string>
     <string name="Daimoku_4_1_4_1">半旗の意味と正しい掲揚の方法を知る。</string>
-    <string name="Daimoku_4_2_1_1">50m泳ぐか 1,000mを走り、自己記録を更新できるように努力する。</string>
+    <string name="Daimoku_4_2_1_1">50m泳ぐか1,000mを走り、自己記録を更新できるように努力する。</string>
     <string name="Daimoku_4_2_2_1">水分や食物の補給が体調に与える影響を知り、体調を管理するための準備ができる。</string>
-    <string name="Daimoku_4_2_3_1">救急法①班員 1人と協力して急造担架を作り、実際に人を運ぶ。</string>
+    <string name="Daimoku_4_2_3_1">救急法①班員1人と協力して急造担架を作り、実際に人を運ぶ。</string>
     <string name="Daimoku_4_2_3_2">救急法②直接圧迫止血法と間接圧迫止血法の違いを知り、直接圧迫止血法による応急処置ができる。</string>
-    <string name="Daimoku_4_3_1_1">キャンピング①班の炊事係として、2泊 3日以上のキャンプの調理を担当する。</string>
-    <string name="Daimoku_4_3_1_2">キャンピング②自然物（石、木、竹等）を用いた、キャンプに役立つ工作を 1つ以上作成する。</string>
+    <string name="Daimoku_4_3_1_1">キャンピング①班の炊事係として、2泊3日以上のキャンプの調理を担当する。</string>
+    <string name="Daimoku_4_3_1_2">キャンピング②自然物（石、木、竹等）を用いた、キャンプに役立つ工作を1つ以上作成する。</string>
     <string name="Daimoku_4_3_1_3">キャンピング③マッチに防水加工を施し、携帯用の防水容器に入れて提出する。</string>
-    <string name="Daimoku_4_3_1_4">キャンピング④連続 5 泊以上の、隊キャンプか自団の隊または班で参加できる地区、県連盟、日本連盟のキャンプ大会に参加する。</string>
+    <string name="Daimoku_4_3_1_4">キャンピング④連続5泊以上の、隊キャンプか自団の隊または班で参加できる地区、県連盟、日本連盟のキャンプ大会に参加する。</string>
     <string name="Daimoku_4_3_1_5">キャンピング⑤キャンプにおける用便、ゴミ処理ならびに食料保管について、衛生上注意する点を知り、実践できる。</string>
-    <string name="Daimoku_4_3_1_6">キャンピング⑥1級旅行（1 泊 24 時間以上のハイキング）の計画書を作成し、必要な個人装備を携行して隊長の指名するベンチャースカウト（但し適任者がいない場合は 1 級以上のスカウト）とともに、隊長より与えられた課題と方法によりキャンプを行い、報告する。このキャンプは、1.基本(1)および 6.班長会議(1)以外の課目を終了した後に、仕上げの課目として行う。</string>
+    <string name="Daimoku_4_3_1_6">キャンピング⑥1級旅行（1泊24時間以上のハイキング）の計画書を作成し、必要な個人装備を携行して隊長の指名するベンチャースカウト（但し適任者がいない場合は1級以上のスカウト）とともに、隊長より与えられた課題と方法によりキャンプを行い、報告する。このキャンプは、1.基本(1)および6.班長会議(1)以外の課目を終了した後に、仕上げの課目として行う。</string>
     <string name="Daimoku_4_3_2_1">ハイキング・読図①日中、夜間においてコンパスを用いずに 2種類の方法で方位を発見する。</string>
     <string name="Daimoku_4_3_2_2">ハイキング・読図②300m以上の距離に追跡記号を設置し班員を誘導する。</string>
     <string name="Daimoku_4_3_2_3">ハイキング・読図③クロスベアリングの手法を用い、地形図上で現在地を発見する。</string>
     <string name="Daimoku_4_3_3_1">ロープ結び①次のロープ結びの使いみちを理解し、実際に使う。ア）垣根結び イ）よろい結び ウ）バタフライノットエ）馬つなぎ オ）からみ止め カ）バックスプライスキ）角しばり ク）はさみしばり ケ）筋かいしばり</string>
-    <string name="Daimoku_4_3_4_1">観察①樹木 5種類以上をスケッチまたは写真で記録し、特徴を述べる。</string>
+    <string name="Daimoku_4_3_4_1">観察①樹木5種類以上をスケッチまたは写真で記録し、特徴を述べる。</string>
     <string name="Daimoku_4_3_4_2">観察②北極星の発見方法を知り、北極星を発見できる。また、5つの星座を発見できる。</string>
     <string name="Daimoku_4_3_4_3">観察③身近にいる動物（ほ乳類・鳥類・魚類など）について観察し、報告する。</string>
-    <string name="Daimoku_4_3_5_1">計測①自作の簡易測量器具を用いて、樹木などの高さを誤差 10％以内で測る。</string>
-    <string name="Daimoku_4_3_5_2">計測②簡易測量法を用い、到達できない 2点間の距離（長さ、高さ）を誤差 10％以内で測る。</string>
+    <string name="Daimoku_4_3_5_1">計測①自作の簡易測量器具を用いて、樹木などの高さを誤差10％以内で測る。</string>
+    <string name="Daimoku_4_3_5_2">計測②簡易測量法を用い、到達できない2点間の距離（長さ、高さ）を誤差10％以内で測る。</string>
     <string name="Daimoku_4_3_5_3">計測③ハイキングで野帳をつけ、その野帳によって略地図を作る。</string>
-    <string name="Daimoku_4_3_6_1">通信①片かな手旗信号で 20文字以上の文章を発信、受信できる。</string>
+    <string name="Daimoku_4_3_6_1">通信①片かな手旗信号で20文字以上の文章を発信、受信できる。</string>
     <string name="Daimoku_4_3_6_2">通信②号笛を使って野外でできる簡単な通信ゲームを考え実施するか、号笛を使用した救難信号を覚える。</string>
     <string name="Daimoku_4_3_7_1">技能章から、「ハイキング章」「スカウトソング章」を取得する。</string>
     <string name="Daimoku_4_4_1_1">班での奉仕活動を計画し、隊長の承認を得て実施、報告する。</string>
-    <string name="Daimoku_4_4_2_1">自分の住んでいる地域にある 3つ以上の施設へ案内ができる。</string>
+    <string name="Daimoku_4_4_2_1">自分の住んでいる地域にある3つ以上の施設へ案内ができる。</string>
     <string name="Daimoku_4_5_1_1">隊集会やキャンプ、ハイキングで行うスカウツオウン・サービスで、主要な役割を果たす。</string>
-    <string name="Daimoku_4_6_1_1">2 級スカウトとして 3 か月以上、隊および班活動に進んで参加したことを班長会議で認めてもらう。</string>
+    <string name="Daimoku_4_6_1_1">2級スカウトとして3か月以上、隊および班活動に進んで参加したことを班長会議で認めてもらう。</string>
 
     <string name="Daimoku_5_1_1_1">「ちかい」と「おきて」の実践に努力して、他のスカウトの模範となる。</string>
-    <string name="Daimoku_5_1_2_1">班長や次長（グリーンバー）、またはジュニアリーダーとして隊運営に 6か月以上携わる。</string>
+    <string name="Daimoku_5_1_2_1">班長や次長（グリーンバー）、またはジュニアリーダーとして隊運営に6か月以上携わる。</string>
     <string name="Daimoku_5_1_3_1">B−Pのラストメッセージを読み、隊長とその内容について話しをする。</string>
     <string name="Daimoku_5_1_4_1">外国のスカウトの「おきて」を調べる。できれば外国スカウトや指導者に直接教えてもらう。</string>
-    <string name="Daimoku_5_2_1_1">5分間泳ぐか 1,500mを走り、自己記録を更新できるように努力する。</string>
+    <string name="Daimoku_5_2_1_1">5分間泳ぐか1,500mを走り、自己記録を更新できるように努力する。</string>
     <string name="Daimoku_5_2_2_1">救急法①AED（自動体外式除細動器）について以下のことが説明できる。ア）AEDとは何か イ）どのような時に使用するか ウ）使用の手順</string>
     <string name="Daimoku_5_2_2_2">救急法②たばこ、アルコール、薬物が人体へ及ぼす害について知る。</string>
     <string name="Daimoku_5_3_1_1">技能章から「野営章」「野外炊事章」「リーダーシップ章」を取得する。</string>
     <string name="Daimoku_5_3_2_1">班長や次長（グリーンバー）として班キャンプ、またはジュニアリーダーとして隊キャンプの計画を行い 1泊以上の固定キャンプを実施し隊長に報告書を提出する。</string>
-    <string name="Daimoku_5_4_1_1">団や地域で取り組んでいる奉仕活動に、4日以上（1日 1時間以上）参加する。</string>
+    <string name="Daimoku_5_4_1_1">団や地域で取り組んでいる奉仕活動に、4日以上（1日1時間以上）参加する。</string>
     <string name="Daimoku_5_5_1_1">信仰奨励章を取得する。</string>
     <string name="Daimoku_5_6_1_1">1級スカウトとして 4か月以上、隊および班活動に進んで参加したことを班長会議で認めてもらう。</string>
 
-    <string name="Daimoku_6_1_1_1">菊スカウトとして最低 6か月間、「ちかい」と「おきて」の実践に最善をつくす。</string>
-    <string name="Daimoku_6_2_1_1">自分を含めた 2人以上のベンチャースカウトで、安全と衛生および環境に配慮した 2泊 3日以上の移動キャンプ（歩行距離 20kmまたは自転車 100km以上）を計画し、隊長の承認を得て実施、報告する。</string>
+    <string name="Daimoku_6_1_1_1">菊スカウトとして最低6か月間、「ちかい」と「おきて」の実践に最善をつくす。</string>
+    <string name="Daimoku_6_2_1_1">自分を含めた2人以上のベンチャースカウトで、安全と衛生および環境に配慮した2泊3日以上の移動キャンプ（歩行距離20kmまたは自転車100km以上）を計画し、隊長の承認を得て実施、報告する。</string>
     <string name="Daimoku_6_2_2_1">次のスカウト技能のいずれかをボーイスカウト隊で指導する。①計測 ②通信 ③ロープ結び</string>
     <string name="Daimoku_6_2_3_1">技能章から「救急章」「パイオニアリング章」を取得する。</string>
-    <string name="Daimoku_6_3_1_1">「スカウティング・フォア・ボーイズ」のキャンプファイア物語 21、22および 26を読み、内容について隊長と話し合う。</string>
-    <string name="Daimoku_6_4_1_1">他部門の活動へ 6か月以上にわたり奉仕し、その実績を報告する。</string>
+    <string name="Daimoku_6_3_1_1">「スカウティング・フォア・ボーイズ」のキャンプファイア物語21、22および26を読み、内容について隊長と話し合う。</string>
+    <string name="Daimoku_6_4_1_1">他部門の活動へ6か月以上にわたり奉仕し、その実績を報告する。</string>
     <string name="Daimoku_6_4_2_1">社会的弱者（高齢者、障がい者等）への支援活動を積極的に行い、隊長に活動記録を提出する。</string>
     <string name="Daimoku_6_5_1_1">自分の所属または興味を持った教宗派の歴史と教えを知る。</string>
     <string name="Daimoku_6_5_2_1">自分の所属または興味を持った教宗派の宗教行事について知る。</string>
-    <string name="Daimoku_6_6_1_1">チームプロジェクトのチーフか主要な役割としてプロジェクトを計画、実施し、隊長に報告書を提出する。または、3泊 4日以上の隊キャンプの実施計画を作成し、実際に運営を行い、隊長に報告する。</string>
+    <string name="Daimoku_6_6_1_1">チームプロジェクトのチーフか主要な役割としてプロジェクトを計画、実施し、隊長に報告書を提出する。または、3泊4日以上の隊キャンプの実施計画を作成し、実際に運営を行い、隊長に報告する。</string>
 
-    <string name="Daimoku_7_1_1_1">隼スカウトとして最低 6か月間、「ちかい」と「おきて」の実践に最善をつくす。</string>
+    <string name="Daimoku_7_1_1_1">隼スカウトとして最低6か月間、「ちかい」と「おきて」の実践に最善をつくす。</string>
     <string name="Daimoku_7_1_2_1">現在の自分の考えと将来の進路についてまとめ、その内容について隊長と話し合う。</string>
-    <string name="Daimoku_7_2_1_1">技能章から「野営管理章」「公民章」を取得し、技能章を合計 15個以上取得する。</string>
-    <string name="Daimoku_7_2_2_1">自ら設定する課題により、2泊 3 日の単独キャンプ（固定または移動）を計画し、隊長の承認を得て実施後、評価を報告書にまとめ隊長へ提出する。</string>
+    <string name="Daimoku_7_2_1_1">技能章から「野営管理章」「公民章」を取得し、技能章を合計15個以上取得する。</string>
+    <string name="Daimoku_7_2_2_1">自ら設定する課題により、2泊3日の単独キャンプ（固定または移動）を計画し、隊長の承認を得て実施後、評価を報告書にまとめ隊長へ提出する。</string>
     <string name="Daimoku_7_3_1_1">「スカウティング・フォア・ボーイズ」を読み、感想文を提出する。</string>
     <string name="Daimoku_7_4_1_1">地域社会や学校などでの奉仕活動を企画し、隊長の承認を得て実施、報告する。</string>
     <string name="Daimoku_7_4_2_1">地区、県連盟、日本連盟の行事等に奉仕し、その実績を報告する。</string>
     <string name="Daimoku_7_4_3_1">奉仕の意義について理解し、自身が今後の人生においてどのように社会に対して奉仕、貢献できるかを文章にまとめ隊長と話し合う。</string>
     <string name="Daimoku_7_5_1_1">宗教章を取得するか、取得に対して努力したことを隊長に認めてもらう。</string>
-    <string name="Daimoku_7_6_1_1">隼スカウトとして自己の成長と社会に役立つための課題を設定し、個人プロジェクト（研究、製作、実験など）を自ら企画して隊長の承認を得た上で、少なくとも 1か月以上にわたって実施、完結させ、隊長に企画書、計画書、および報告書を提出する。</string>
+    <string name="Daimoku_7_6_1_1">隼スカウトとして自己の成長と社会に役立つための課題を設定し、個人プロジェクト（研究、製作、実験など）を自ら企画して隊長の承認を得た上で、少なくとも1か月以上にわたって実施、完結させ、隊長に企画書、計画書、および報告書を提出する。</string>
 
 </resources>

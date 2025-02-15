@@ -76,7 +76,14 @@ public class SaimokuActivity extends AppCompatActivity {
                 findViewById(R.id.fuji).setVisibility(View.GONE);
 
                 switch (item){
-                    case "見習い":
+                    case "全件表示":
+                        findViewById(R.id.syokyu).setVisibility(View.VISIBLE);
+                        findViewById(R.id.nikyu).setVisibility(View.VISIBLE);
+                        findViewById(R.id.itikyu).setVisibility(View.VISIBLE);
+                        findViewById(R.id.kiku).setVisibility(View.VISIBLE);
+                        findViewById(R.id.kiku).setVisibility(View.VISIBLE);
+                        findViewById(R.id.hayabusa).setVisibility(View.VISIBLE);
+                        findViewById(R.id.fuji).setVisibility(View.VISIBLE);
 
                         break;
 
