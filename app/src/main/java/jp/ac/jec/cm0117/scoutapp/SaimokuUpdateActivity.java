@@ -18,6 +18,7 @@ import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -33,8 +34,11 @@ import java.util.Date;
 import java.util.Locale;
 
 import okhttp3.Call;
+import okhttp3.Callback;
+import okhttp3.FormBody;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
+import okhttp3.RequestBody;
 import okhttp3.Response;
 
 public class SaimokuUpdateActivity extends AppCompatActivity {
@@ -102,38 +106,39 @@ public class SaimokuUpdateActivity extends AppCompatActivity {
 
                 Log.d("TAG", "JSON_URL: " + uriBuilder);
 
-                Request request = new Request.Builder().url(uriBuilder.toString()).build();
-                uriBuilder.build();
+                saveData(uriBuilder);
+                Log.d("TAG", "onCreate: インサート完了");
+            }else{
+                Toast.makeText(this,"未入力があります",Toast.LENGTH_SHORT).show();
             }
         });
 
     }
-    private void loadSvData(Uri.Builder uriBuilder){
-        Log.d("TAG", "loadSvData: " + uriBuilder.toString());
-        final Request request = new Request.Builder().url(uriBuilder.toString()).build();
+
+    private void saveData(Uri.Builder uriBuilder){
+        final FormBody.Builder formBuilder = new FormBody.Builder();
+        RequestBody requestBody = formBuilder.build();
+
+        final Request request = new Request.Builder()
+                .url(uriBuilder.toString())
+                .post(requestBody)
+                .build();
+
         final OkHttpClient client = new OkHttpClient.Builder().build();
 
-        client.newCall(request).enqueue(new okhttp3.Callback(){
+        client.newCall(request).enqueue(new Callback(){
             @Override
             public void onResponse(Call call, Response response) throws IOException {
-
-                Log.d("TAG", "onResponse: ZZZZZZ" );
-
-//                final ArrayList<RankItem> ary = JsonHelper.parseJson(resString);
-//                Log.d("TAG", "onResponse: " + ary);
-//                Handler handler = new Handler(Looper.getMainLooper());
-//                handler.post(new Runnable() {
-//                    @Override
-//                    public void run() {
-//                        setListView(ary);
-//                    }
-//                });
+                final String resString = response.body().string();
+                Log.d("TAG", resString);
             }
             @Override
             public void onFailure(Call call, IOException arg1){
             }
         });
+        finish();
     }
+
 
 
     private class DialogDateEvent implements DatePickerDialog.OnDateSetListener {
