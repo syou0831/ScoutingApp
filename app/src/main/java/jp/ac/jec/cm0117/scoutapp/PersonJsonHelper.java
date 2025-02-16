@@ -42,6 +42,24 @@ public class PersonJsonHelper {
         person.setArea(json.getString("Area"));
         person.setCity(json.getString("City"));
         person.setGroupNum(json.getString("GroupNum"));
+        person.setStateDate(json.getString("StateDate"));
+        person.setStateField(json.getString("StateField"));
+        person.setInBVS(json.getString("inBVS"));
+        person.setInCS(json.getString("inCS"));
+        person.setInBS(json.getString("inBS"));
+        person.setInVS(json.getString("inVS"));
+        person.setInRS(json.getString("inRS"));
+        person.setMinarai(json.getString("Minarai"));
+        person.setBasic(json.getString("Basic"));
+        person.setSecond(json.getString("Second"));
+        person.setFirst(json.getString("First"));
+        person.setKiku(json.getString("Kiku"));
+        person.setHayabusa(json.getString("Hayabusa"));
+        person.setFuji(json.getString("Fuji"));
+        person.setSinkouSyourei(json.getString("SinkouSyourei"));
+        person.setSyukyou(json.getString("Syukyou"));
+        person.setSyukyouName(json.getString("SyukyouName"));
+
 
         return person;
     }

@@ -11,7 +11,7 @@
     <Spinner
         android:id="@+id/spinner"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="48dp"
         android:entries="@array/kaikyu" />
 
     <ScrollView
@@ -903,6 +903,7 @@
                             android:layout_height="match_parent"
                             android:layout_weight="80"
                             android:background="@drawable/border"
+                            android:gravity="center"
                             android:text="YYYY/MM/DD" />
 
                         <TextView
@@ -911,6 +912,7 @@
                             android:layout_height="match_parent"
                             android:layout_weight="60"
                             android:background="@drawable/border"
+                            android:gravity="center"
                             android:text="名前" />
 
                     </LinearLayout>
@@ -1410,7 +1412,7 @@
                             android:background="@drawable/border"
                             android:gravity="center"
                             android:text="1(6)" />
-<!--ここからmatch_parent入れていく-->
+
                         <TextView
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
@@ -1421,7 +1423,7 @@
                         <TextView
                             android:id="@+id/CompletedDate3_3_1_6"
                             android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:layout_weight="80"
                             android:background="@drawable/border"
                             android:gravity="center"
@@ -1430,7 +1432,7 @@
                         <TextView
                             android:id="@+id/SyouninsyaName3_3_1_6"
                             android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:layout_weight="60"
                             android:background="@drawable/border"
                             android:gravity="center"
@@ -1461,7 +1463,7 @@
                         <TextView
                             android:id="@+id/CompletedDate3_3_2_1"
                             android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:layout_weight="80"
                             android:background="@drawable/border"
                             android:gravity="center"
@@ -1470,7 +1472,7 @@
                         <TextView
                             android:id="@+id/SyouninsyaName3_3_2_1"
                             android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:layout_weight="60"
                             android:background="@drawable/border"
                             android:gravity="center"
@@ -1501,7 +1503,7 @@
                         <TextView
                             android:id="@+id/CompletedDate3_3_2_2"
                             android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:layout_weight="80"
                             android:background="@drawable/border"
                             android:gravity="center"
@@ -1510,7 +1512,7 @@
                         <TextView
                             android:id="@+id/SyouninsyaName3_3_2_2"
                             android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:layout_weight="60"
                             android:background="@drawable/border"
                             android:gravity="center"
@@ -1541,7 +1543,7 @@
                         <TextView
                             android:id="@+id/CompletedDate3_3_2_3"
                             android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:layout_weight="80"
                             android:background="@drawable/border"
                             android:gravity="center"
@@ -1550,7 +1552,7 @@
                         <TextView
                             android:id="@+id/SyouninsyaName3_3_2_3"
                             android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:layout_weight="60"
                             android:background="@drawable/border"
                             android:gravity="center"
@@ -1581,7 +1583,7 @@
                         <TextView
                             android:id="@+id/CompletedDate3_3_3_1"
                             android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:layout_weight="80"
                             android:background="@drawable/border"
                             android:gravity="center"
@@ -1590,7 +1592,7 @@
                         <TextView
                             android:id="@+id/SyouninsyaName3_3_3_1"
                             android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:layout_weight="60"
                             android:background="@drawable/border"
                             android:gravity="center"
@@ -1621,7 +1623,7 @@
                         <TextView
                             android:id="@+id/CompletedDate3_3_4_1"
                             android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:layout_weight="80"
                             android:background="@drawable/border"
                             android:gravity="center"
@@ -1630,7 +1632,7 @@
                         <TextView
                             android:id="@+id/SyouninsyaName3_3_4_1"
                             android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:layout_weight="60"
                             android:background="@drawable/border"
                             android:gravity="center"
@@ -1661,7 +1663,7 @@
                         <TextView
                             android:id="@+id/CompletedDate3_3_4_2"
                             android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:layout_weight="80"
                             android:background="@drawable/border"
                             android:gravity="center"
@@ -1670,7 +1672,7 @@
                         <TextView
                             android:id="@+id/SyouninsyaName3_3_4_2"
                             android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:layout_weight="60"
                             android:background="@drawable/border"
                             android:gravity="center"
@@ -1701,7 +1703,7 @@
                         <TextView
                             android:id="@+id/CompletedDate3_3_5_1"
                             android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:layout_weight="80"
                             android:background="@drawable/border"
                             android:gravity="center"
@@ -1710,7 +1712,7 @@
                         <TextView
                             android:id="@+id/SyouninsyaName3_3_5_1"
                             android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:layout_weight="60"
                             android:background="@drawable/border"
                             android:gravity="center"
@@ -1741,7 +1743,7 @@
                         <TextView
                             android:id="@+id/CompletedDate3_3_5_2"
                             android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:layout_weight="80"
                             android:background="@drawable/border"
                             android:gravity="center"
@@ -1750,7 +1752,7 @@
                         <TextView
                             android:id="@+id/SyouninsyaName3_3_5_2"
                             android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:layout_weight="60"
                             android:background="@drawable/border"
                             android:gravity="center"
@@ -1781,7 +1783,7 @@
                         <TextView
                             android:id="@+id/CompletedDate3_3_5_3"
                             android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:layout_weight="80"
                             android:background="@drawable/border"
                             android:gravity="center"
@@ -1790,7 +1792,7 @@
                         <TextView
                             android:id="@+id/SyouninsyaName3_3_5_3"
                             android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:layout_weight="60"
                             android:background="@drawable/border"
                             android:gravity="center"
@@ -1821,7 +1823,7 @@
                         <TextView
                             android:id="@+id/CompletedDate3_3_6_1"
                             android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:layout_weight="80"
                             android:background="@drawable/border"
                             android:gravity="center"
@@ -1830,7 +1832,7 @@
                         <TextView
                             android:id="@+id/SyouninsyaName3_3_6_1"
                             android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:layout_weight="60"
                             android:background="@drawable/border"
                             android:gravity="center"
@@ -1861,7 +1863,7 @@
                         <TextView
                             android:id="@+id/CompletedDate3_3_6_2"
                             android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:layout_weight="80"
                             android:background="@drawable/border"
                             android:gravity="center"
@@ -1870,7 +1872,7 @@
                         <TextView
                             android:id="@+id/SyouninsyaName3_3_6_2"
                             android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:layout_weight="60"
                             android:background="@drawable/border"
                             android:gravity="center"
@@ -1943,7 +1945,7 @@
                         <TextView
                             android:id="@+id/CompletedDate3_4_1_1"
                             android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:layout_weight="80"
                             android:background="@drawable/border"
                             android:gravity="center"
@@ -1952,7 +1954,7 @@
                         <TextView
                             android:id="@+id/SyouninsyaName3_4_1_1"
                             android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:layout_weight="60"
                             android:background="@drawable/border"
                             android:gravity="center"
@@ -2025,7 +2027,7 @@
                         <TextView
                             android:id="@+id/CompletedDate3_5_1_1"
                             android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:layout_weight="80"
                             android:background="@drawable/border"
                             android:gravity="center"
@@ -2034,7 +2036,7 @@
                         <TextView
                             android:id="@+id/SyouninsyaName3_5_1_1"
                             android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:layout_weight="60"
                             android:background="@drawable/border"
                             android:gravity="center"
@@ -2107,7 +2109,7 @@
                         <TextView
                             android:id="@+id/CompletedDate3_6_1_1"
                             android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:layout_weight="80"
                             android:background="@drawable/border"
                             android:gravity="center"
@@ -2116,7 +2118,7 @@
                         <TextView
                             android:id="@+id/SyouninsyaName3_6_1_1"
                             android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:layout_weight="60"
                             android:background="@drawable/border"
                             android:gravity="center"
@@ -2198,7 +2200,7 @@
                         <TextView
                             android:id="@+id/CompletedDate4_1_1_1"
                             android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:layout_weight="80"
                             android:background="@drawable/border"
                             android:gravity="center"
@@ -2207,7 +2209,7 @@
                         <TextView
                             android:id="@+id/SyouninsyaName4_1_1_1"
                             android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:layout_weight="60"
                             android:background="@drawable/border"
                             android:gravity="center"
@@ -2238,7 +2240,7 @@
                         <TextView
                             android:id="@+id/CompletedDate4_1_2_1"
                             android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:layout_weight="80"
                             android:background="@drawable/border"
                             android:gravity="center"
@@ -2247,7 +2249,7 @@
                         <TextView
                             android:id="@+id/SyouninsyaName4_1_2_1"
                             android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:layout_weight="60"
                             android:background="@drawable/border"
                             android:gravity="center"
@@ -2278,7 +2280,7 @@
                         <TextView
                             android:id="@+id/CompletedDate4_1_3_1"
                             android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:layout_weight="80"
                             android:background="@drawable/border"
                             android:gravity="center"
@@ -2287,7 +2289,7 @@
                         <TextView
                             android:id="@+id/SyouninsyaName4_1_3_1"
                             android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:layout_weight="60"
                             android:background="@drawable/border"
                             android:gravity="center"
@@ -2318,7 +2320,7 @@
                         <TextView
                             android:id="@+id/CompletedDate4_1_4_1"
                             android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:layout_weight="80"
                             android:background="@drawable/border"
                             android:gravity="center"
@@ -2327,7 +2329,7 @@
                         <TextView
                             android:id="@+id/SyouninsyaName4_1_4_1"
                             android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:layout_weight="60"
                             android:background="@drawable/border"
                             android:gravity="center"
@@ -2400,7 +2402,7 @@
                         <TextView
                             android:id="@+id/CompletedDate4_2_1_1"
                             android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:layout_weight="80"
                             android:background="@drawable/border"
                             android:gravity="center"
@@ -2409,7 +2411,7 @@
                         <TextView
                             android:id="@+id/SyouninsyaName4_2_1_1"
                             android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:layout_weight="60"
                             android:background="@drawable/border"
                             android:gravity="center"
@@ -2440,7 +2442,7 @@
                         <TextView
                             android:id="@+id/CompletedDate4_2_2_1"
                             android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:layout_weight="80"
                             android:background="@drawable/border"
                             android:gravity="center"
@@ -2449,7 +2451,7 @@
                         <TextView
                             android:id="@+id/SyouninsyaName4_2_2_1"
                             android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:layout_weight="60"
                             android:background="@drawable/border"
                             android:gravity="center"
@@ -2480,7 +2482,7 @@
                         <TextView
                             android:id="@+id/CompletedDate4_2_3_1"
                             android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:layout_weight="80"
                             android:background="@drawable/border"
                             android:gravity="center"
@@ -2489,7 +2491,7 @@
                         <TextView
                             android:id="@+id/SyouninsyaName4_2_3_1"
                             android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:layout_weight="60"
                             android:background="@drawable/border"
                             android:gravity="center"
@@ -2520,7 +2522,7 @@
                         <TextView
                             android:id="@+id/CompletedDate4_2_3_2"
                             android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:layout_weight="80"
                             android:background="@drawable/border"
                             android:gravity="center"
@@ -2529,7 +2531,7 @@
                         <TextView
                             android:id="@+id/SyouninsyaName4_2_3_2"
                             android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:layout_weight="60"
                             android:background="@drawable/border"
                             android:gravity="center"
@@ -2596,12 +2598,13 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="185"
+                            android:background="@drawable/border"
                             android:text="@string/Daimoku_4_3_1_1" />
 
                         <TextView
                             android:id="@+id/CompletedDate4_3_1_1"
                             android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:layout_weight="80"
                             android:background="@drawable/border"
                             android:gravity="center"
@@ -2610,7 +2613,7 @@
                         <TextView
                             android:id="@+id/SyouninsyaName4_3_1_1"
                             android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:layout_weight="60"
                             android:background="@drawable/border"
                             android:gravity="center"
@@ -2635,12 +2638,13 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="185"
+                            android:background="@drawable/border"
                             android:text="@string/Daimoku_4_3_1_2" />
 
                         <TextView
                             android:id="@+id/CompletedDate4_3_1_2"
                             android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:layout_weight="80"
                             android:background="@drawable/border"
                             android:gravity="center"
@@ -2649,7 +2653,7 @@
                         <TextView
                             android:id="@+id/SyouninsyaName4_3_1_2"
                             android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:layout_weight="60"
                             android:background="@drawable/border"
                             android:gravity="center"
@@ -2674,12 +2678,13 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="185"
+                            android:background="@drawable/border"
                             android:text="@string/Daimoku_4_3_1_3" />
 
                         <TextView
                             android:id="@+id/CompletedDate4_3_1_3"
                             android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:layout_weight="80"
                             android:background="@drawable/border"
                             android:gravity="center"
@@ -2688,7 +2693,7 @@
                         <TextView
                             android:id="@+id/SyouninsyaName4_3_1_3"
                             android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:layout_weight="60"
                             android:background="@drawable/border"
                             android:gravity="center"
@@ -2713,12 +2718,13 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="185"
+                            android:background="@drawable/border"
                             android:text="@string/Daimoku_4_3_1_4" />
 
                         <TextView
                             android:id="@+id/CompletedDate4_3_1_4"
                             android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:layout_weight="80"
                             android:background="@drawable/border"
                             android:gravity="center"
@@ -2727,7 +2733,7 @@
                         <TextView
                             android:id="@+id/SyouninsyaName4_3_1_4"
                             android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:layout_weight="60"
                             android:background="@drawable/border"
                             android:gravity="center"
@@ -2752,12 +2758,13 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="185"
+                            android:background="@drawable/border"
                             android:text="@string/Daimoku_4_3_1_5" />
 
                         <TextView
                             android:id="@+id/CompletedDate4_3_1_5"
                             android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:layout_weight="80"
                             android:background="@drawable/border"
                             android:gravity="center"
@@ -2766,7 +2773,7 @@
                         <TextView
                             android:id="@+id/SyouninsyaName4_3_1_5"
                             android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:layout_weight="60"
                             android:background="@drawable/border"
                             android:gravity="center"
@@ -2791,12 +2798,13 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="185"
+                            android:background="@drawable/border"
                             android:text="@string/Daimoku_4_3_1_6" />
 
                         <TextView
                             android:id="@+id/CompletedDate4_3_1_6"
                             android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:layout_weight="80"
                             android:background="@drawable/border"
                             android:gravity="center"
@@ -2805,7 +2813,7 @@
                         <TextView
                             android:id="@+id/SyouninsyaName4_3_1_6"
                             android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:layout_weight="60"
                             android:background="@drawable/border"
                             android:gravity="center"
@@ -2830,12 +2838,13 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="185"
+                            android:background="@drawable/border"
                             android:text="@string/Daimoku_4_3_2_1" />
 
                         <TextView
                             android:id="@+id/CompletedDate4_3_2_1"
                             android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:layout_weight="80"
                             android:background="@drawable/border"
                             android:gravity="center"
@@ -2844,7 +2853,7 @@
                         <TextView
                             android:id="@+id/SyouninsyaName4_3_2_1"
                             android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:layout_weight="60"
                             android:background="@drawable/border"
                             android:gravity="center"
@@ -2869,12 +2878,13 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="185"
+                            android:background="@drawable/border"
                             android:text="@string/Daimoku_4_3_2_2" />
 
                         <TextView
                             android:id="@+id/CompletedDate4_3_2_2"
                             android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:layout_weight="80"
                             android:background="@drawable/border"
                             android:gravity="center"
@@ -2883,7 +2893,7 @@
                         <TextView
                             android:id="@+id/SyouninsyaName4_3_2_2"
                             android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:layout_weight="60"
                             android:background="@drawable/border"
                             android:gravity="center"
@@ -2908,12 +2918,13 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="185"
+                            android:background="@drawable/border"
                             android:text="@string/Daimoku_4_3_2_3" />
 
                         <TextView
                             android:id="@+id/CompletedDate4_3_2_3"
                             android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:layout_weight="80"
                             android:background="@drawable/border"
                             android:gravity="center"
@@ -2922,7 +2933,7 @@
                         <TextView
                             android:id="@+id/SyouninsyaName4_3_2_3"
                             android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:layout_weight="60"
                             android:background="@drawable/border"
                             android:gravity="center"
@@ -2947,12 +2958,13 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="185"
+                            android:background="@drawable/border"
                             android:text="@string/Daimoku_4_3_3_1" />
 
                         <TextView
                             android:id="@+id/CompletedDate4_3_3_1"
                             android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:layout_weight="80"
                             android:background="@drawable/border"
                             android:gravity="center"
@@ -2961,7 +2973,7 @@
                         <TextView
                             android:id="@+id/SyouninsyaName4_3_3_1"
                             android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:layout_weight="60"
                             android:background="@drawable/border"
                             android:gravity="center"
@@ -2986,12 +2998,13 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="185"
+                            android:background="@drawable/border"
                             android:text="@string/Daimoku_4_3_4_1" />
 
                         <TextView
                             android:id="@+id/CompletedDate4_3_4_1"
                             android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:layout_weight="80"
                             android:background="@drawable/border"
                             android:gravity="center"
@@ -3000,7 +3013,7 @@
                         <TextView
                             android:id="@+id/SyouninsyaName4_3_4_1"
                             android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:layout_weight="60"
                             android:background="@drawable/border"
                             android:gravity="center"
@@ -3025,12 +3038,13 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="185"
+                            android:background="@drawable/border"
                             android:text="@string/Daimoku_4_3_4_2" />
 
                         <TextView
                             android:id="@+id/CompletedDate4_3_4_2"
                             android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:layout_weight="80"
                             android:background="@drawable/border"
                             android:gravity="center"
@@ -3039,7 +3053,7 @@
                         <TextView
                             android:id="@+id/SyouninsyaName4_3_4_2"
                             android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:layout_weight="60"
                             android:background="@drawable/border"
                             android:gravity="center"
@@ -3064,12 +3078,13 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="185"
+                            android:background="@drawable/border"
                             android:text="@string/Daimoku_4_3_4_3" />
 
                         <TextView
                             android:id="@+id/CompletedDate4_3_4_3"
                             android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:layout_weight="80"
                             android:background="@drawable/border"
                             android:gravity="center"
@@ -3078,7 +3093,7 @@
                         <TextView
                             android:id="@+id/SyouninsyaName4_3_4_3"
                             android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:layout_weight="60"
                             android:background="@drawable/border"
                             android:gravity="center"
@@ -3103,12 +3118,13 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="185"
+                            android:background="@drawable/border"
                             android:text="@string/Daimoku_4_3_5_1" />
 
                         <TextView
                             android:id="@+id/CompletedDate4_3_5_1"
                             android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:layout_weight="80"
                             android:background="@drawable/border"
                             android:gravity="center"
@@ -3117,7 +3133,7 @@
                         <TextView
                             android:id="@+id/SyouninsyaName4_3_5_1"
                             android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:layout_weight="60"
                             android:background="@drawable/border"
                             android:gravity="center"
@@ -3142,12 +3158,13 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="185"
+                            android:background="@drawable/border"
                             android:text="@string/Daimoku_4_3_5_2" />
 
                         <TextView
                             android:id="@+id/CompletedDate4_3_5_2"
                             android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:layout_weight="80"
                             android:background="@drawable/border"
                             android:gravity="center"
@@ -3156,7 +3173,7 @@
                         <TextView
                             android:id="@+id/SyouninsyaName4_3_5_2"
                             android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:layout_weight="60"
                             android:background="@drawable/border"
                             android:gravity="center"
@@ -3181,12 +3198,13 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="185"
+                            android:background="@drawable/border"
                             android:text="@string/Daimoku_4_3_5_3" />
 
                         <TextView
                             android:id="@+id/CompletedDate4_3_5_3"
                             android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:layout_weight="80"
                             android:background="@drawable/border"
                             android:gravity="center"
@@ -3195,7 +3213,7 @@
                         <TextView
                             android:id="@+id/SyouninsyaName4_3_5_3"
                             android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:layout_weight="60"
                             android:background="@drawable/border"
                             android:gravity="center"
@@ -3220,12 +3238,13 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="185"
+                            android:background="@drawable/border"
                             android:text="@string/Daimoku_4_3_6_1" />
 
                         <TextView
                             android:id="@+id/CompletedDate4_3_6_1"
                             android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:layout_weight="80"
                             android:background="@drawable/border"
                             android:gravity="center"
@@ -3234,7 +3253,7 @@
                         <TextView
                             android:id="@+id/SyouninsyaName4_3_6_1"
                             android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:layout_weight="60"
                             android:background="@drawable/border"
                             android:gravity="center"
@@ -3259,12 +3278,13 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="185"
+                            android:background="@drawable/border"
                             android:text="@string/Daimoku_4_3_6_2" />
 
                         <TextView
                             android:id="@+id/CompletedDate4_3_6_2"
                             android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:layout_weight="80"
                             android:background="@drawable/border"
                             android:gravity="center"
@@ -3273,7 +3293,7 @@
                         <TextView
                             android:id="@+id/SyouninsyaName4_3_6_2"
                             android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:layout_weight="60"
                             android:background="@drawable/border"
                             android:gravity="center"
@@ -3298,12 +3318,13 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="185"
+                            android:background="@drawable/border"
                             android:text="@string/Daimoku_4_3_7_1" />
 
                         <TextView
                             android:id="@+id/CompletedDate4_3_7_1"
                             android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:layout_weight="80"
                             android:background="@drawable/border"
                             android:gravity="center"
@@ -3312,7 +3333,7 @@
                         <TextView
                             android:id="@+id/SyouninsyaName4_3_7_1"
                             android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:layout_weight="60"
                             android:background="@drawable/border"
                             android:gravity="center"
@@ -3379,12 +3400,13 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="185"
+                            android:background="@drawable/border"
                             android:text="@string/Daimoku_4_4_1_1" />
 
                         <TextView
                             android:id="@+id/CompletedDate4_4_1_1"
                             android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:layout_weight="80"
                             android:background="@drawable/border"
                             android:gravity="center"
@@ -3393,7 +3415,7 @@
                         <TextView
                             android:id="@+id/SyouninsyaName4_4_1_1"
                             android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:layout_weight="60"
                             android:background="@drawable/border"
                             android:gravity="center"
@@ -3418,12 +3440,13 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="185"
+                            android:background="@drawable/border"
                             android:text="@string/Daimoku_4_4_2_1" />
 
                         <TextView
                             android:id="@+id/CompletedDate4_4_2_1"
                             android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:layout_weight="80"
                             android:background="@drawable/border"
                             android:gravity="center"
@@ -3432,7 +3455,7 @@
                         <TextView
                             android:id="@+id/SyouninsyaName4_4_2_1"
                             android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:layout_weight="60"
                             android:background="@drawable/border"
                             android:gravity="center"
@@ -3499,12 +3522,13 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="185"
+                            android:background="@drawable/border"
                             android:text="@string/Daimoku_4_5_1_1" />
 
                         <TextView
                             android:id="@+id/CompletedDate4_5_1_1"
                             android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:layout_weight="80"
                             android:background="@drawable/border"
                             android:gravity="center"
@@ -3513,7 +3537,7 @@
                         <TextView
                             android:id="@+id/SyouninsyaName4_5_1_1"
                             android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:layout_weight="60"
                             android:background="@drawable/border"
                             android:gravity="center"
@@ -3580,12 +3604,13 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="185"
+                            android:background="@drawable/border"
                             android:text="@string/Daimoku_4_6_1_1" />
 
                         <TextView
                             android:id="@+id/CompletedDate4_6_1_1"
                             android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:layout_weight="80"
                             android:background="@drawable/border"
                             android:gravity="center"
@@ -3594,7 +3619,7 @@
                         <TextView
                             android:id="@+id/SyouninsyaName4_6_1_1"
                             android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:layout_weight="60"
                             android:background="@drawable/border"
                             android:gravity="center"
@@ -3670,12 +3695,13 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="185"
+                            android:background="@drawable/border"
                             android:text="@string/Daimoku_5_1_1_1" />
 
                         <TextView
                             android:id="@+id/CompletedDate5_1_1_1"
                             android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:layout_weight="80"
                             android:background="@drawable/border"
                             android:gravity="center"
@@ -3684,7 +3710,7 @@
                         <TextView
                             android:id="@+id/SyouninsyaName5_1_1_1"
                             android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:layout_weight="60"
                             android:background="@drawable/border"
                             android:gravity="center"
@@ -3709,12 +3735,13 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="185"
+                            android:background="@drawable/border"
                             android:text="@string/Daimoku_5_1_2_1" />
 
                         <TextView
                             android:id="@+id/CompletedDate5_1_2_1"
                             android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:layout_weight="80"
                             android:background="@drawable/border"
                             android:gravity="center"
@@ -3723,7 +3750,7 @@
                         <TextView
                             android:id="@+id/SyouninsyaName5_1_2_1"
                             android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:layout_weight="60"
                             android:background="@drawable/border"
                             android:gravity="center"
@@ -3748,12 +3775,13 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="185"
+                            android:background="@drawable/border"
                             android:text="@string/Daimoku_5_1_3_1" />
 
                         <TextView
                             android:id="@+id/CompletedDate5_1_3_1"
                             android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:layout_weight="80"
                             android:background="@drawable/border"
                             android:gravity="center"
@@ -3762,7 +3790,7 @@
                         <TextView
                             android:id="@+id/SyouninsyaName5_1_3_1"
                             android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:layout_weight="60"
                             android:background="@drawable/border"
                             android:gravity="center"
@@ -3787,12 +3815,13 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="185"
+                            android:background="@drawable/border"
                             android:text="@string/Daimoku_5_1_4_1" />
 
                         <TextView
                             android:id="@+id/CompletedDate5_1_4_1"
                             android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:layout_weight="80"
                             android:background="@drawable/border"
                             android:gravity="center"
@@ -3801,7 +3830,7 @@
                         <TextView
                             android:id="@+id/SyouninsyaName5_1_4_1"
                             android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:layout_weight="60"
                             android:background="@drawable/border"
                             android:gravity="center"
@@ -3868,12 +3897,13 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="185"
+                            android:background="@drawable/border"
                             android:text="@string/Daimoku_5_2_1_1" />
 
                         <TextView
                             android:id="@+id/CompletedDate5_2_1_1"
                             android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:layout_weight="80"
                             android:background="@drawable/border"
                             android:gravity="center"
@@ -3882,7 +3912,7 @@
                         <TextView
                             android:id="@+id/SyouninsyaName5_2_1_1"
                             android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:layout_weight="60"
                             android:background="@drawable/border"
                             android:gravity="center"
@@ -3907,12 +3937,13 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="185"
+                            android:background="@drawable/border"
                             android:text="@string/Daimoku_5_2_2_1" />
 
                         <TextView
                             android:id="@+id/CompletedDate5_2_2_1"
                             android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:layout_weight="80"
                             android:background="@drawable/border"
                             android:gravity="center"
@@ -3921,7 +3952,7 @@
                         <TextView
                             android:id="@+id/SyouninsyaName5_2_2_1"
                             android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:layout_weight="60"
                             android:background="@drawable/border"
                             android:gravity="center"
@@ -3946,12 +3977,13 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="185"
+                            android:background="@drawable/border"
                             android:text="@string/Daimoku_5_2_2_2" />
 
                         <TextView
                             android:id="@+id/CompletedDate5_2_2_2"
                             android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:layout_weight="80"
                             android:background="@drawable/border"
                             android:gravity="center"
@@ -3960,7 +3992,7 @@
                         <TextView
                             android:id="@+id/SyouninsyaName5_2_2_2"
                             android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:layout_weight="60"
                             android:background="@drawable/border"
                             android:gravity="center"
@@ -4027,12 +4059,13 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="185"
+                            android:background="@drawable/border"
                             android:text="@string/Daimoku_5_3_1_1" />
 
                         <TextView
                             android:id="@+id/CompletedDate5_3_1_1"
                             android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:layout_weight="80"
                             android:background="@drawable/border"
                             android:gravity="center"
@@ -4041,7 +4074,7 @@
                         <TextView
                             android:id="@+id/SyouninsyaName5_3_1_1"
                             android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:layout_weight="60"
                             android:background="@drawable/border"
                             android:gravity="center"
@@ -4066,12 +4099,13 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="185"
+                            android:background="@drawable/border"
                             android:text="@string/Daimoku_5_3_2_1" />
 
                         <TextView
                             android:id="@+id/CompletedDate5_3_2_1"
                             android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:layout_weight="80"
                             android:background="@drawable/border"
                             android:gravity="center"
@@ -4080,7 +4114,7 @@
                         <TextView
                             android:id="@+id/SyouninsyaName5_3_2_1"
                             android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:layout_weight="60"
                             android:background="@drawable/border"
                             android:gravity="center"
@@ -4117,7 +4151,6 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="80"
                             android:background="@drawable/border"
-                            android:gravity="center"
                             android:text="認定日" />
 
                         <TextView
@@ -4125,7 +4158,6 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="60"
                             android:background="@drawable/border"
-                            android:gravity="center"
                             android:text="認定者" />
 
                     </LinearLayout>
@@ -4147,20 +4179,25 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="185"
+                            android:background="@drawable/border"
                             android:text="@string/Daimoku_5_4_1_1" />
 
                         <TextView
                             android:id="@+id/CompletedDate5_4_1_1"
                             android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:layout_weight="80"
+                            android:background="@drawable/border"
+                            android:gravity="center"
                             android:text="YYYY/MM/DD" />
 
                         <TextView
                             android:id="@+id/SyouninsyaName5_4_1_1"
                             android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:layout_weight="60"
+                            android:background="@drawable/border"
+                            android:gravity="center"
                             android:text="名前" />
 
                     </LinearLayout>
@@ -4191,7 +4228,7 @@
 
                         <TextView
                             android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:layout_weight="80"
                             android:background="@drawable/border"
                             android:gravity="center"
@@ -4199,7 +4236,7 @@
 
                         <TextView
                             android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:layout_weight="60"
                             android:background="@drawable/border"
                             android:gravity="center"
@@ -4224,12 +4261,13 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="185"
+                            android:background="@drawable/border"
                             android:text="@string/Daimoku_5_5_1_1" />
 
                         <TextView
                             android:id="@+id/CompletedDate5_5_1_1"
                             android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:layout_weight="80"
                             android:background="@drawable/border"
                             android:gravity="center"
@@ -4238,7 +4276,7 @@
                         <TextView
                             android:id="@+id/SyouninsyaName5_5_1_1"
                             android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:layout_weight="60"
                             android:background="@drawable/border"
                             android:gravity="center"
@@ -4305,12 +4343,13 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="185"
+                            android:background="@drawable/border"
                             android:text="@string/Daimoku_5_6_1_1" />
 
                         <TextView
                             android:id="@+id/CompletedDate5_6_1_1"
                             android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:layout_weight="80"
                             android:background="@drawable/border"
                             android:gravity="center"
@@ -4319,7 +4358,7 @@
                         <TextView
                             android:id="@+id/SyouninsyaName5_6_1_1"
                             android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:layout_weight="60"
                             android:background="@drawable/border"
                             android:gravity="center"
@@ -4395,12 +4434,13 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="185"
+                            android:background="@drawable/border"
                             android:text="@string/Daimoku_6_1_1_1" />
 
                         <TextView
                             android:id="@+id/CompletedDate6_1_1_1"
                             android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:layout_weight="80"
                             android:background="@drawable/border"
                             android:gravity="center"
@@ -4409,7 +4449,7 @@
                         <TextView
                             android:id="@+id/SyouninsyaName6_1_1_1"
                             android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:layout_weight="60"
                             android:background="@drawable/border"
                             android:gravity="center"
@@ -4476,12 +4516,13 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="185"
+                            android:background="@drawable/border"
                             android:text="@string/Daimoku_6_2_1_1" />
 
                         <TextView
                             android:id="@+id/CompletedDate6_2_1_1"
                             android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:layout_weight="80"
                             android:background="@drawable/border"
                             android:gravity="center"
@@ -4490,7 +4531,7 @@
                         <TextView
                             android:id="@+id/SyouninsyaName6_2_1_1"
                             android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:layout_weight="60"
                             android:background="@drawable/border"
                             android:gravity="center"
@@ -4515,12 +4556,13 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="185"
+                            android:background="@drawable/border"
                             android:text="@string/Daimoku_6_2_2_1" />
 
                         <TextView
                             android:id="@+id/CompletedDate6_2_2_1"
                             android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:layout_weight="80"
                             android:background="@drawable/border"
                             android:gravity="center"
@@ -4529,7 +4571,7 @@
                         <TextView
                             android:id="@+id/SyouninsyaName6_2_2_1"
                             android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:layout_weight="60"
                             android:background="@drawable/border"
                             android:gravity="center"
@@ -4554,12 +4596,13 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="185"
+                            android:background="@drawable/border"
                             android:text="@string/Daimoku_6_2_3_1" />
 
                         <TextView
                             android:id="@+id/CompletedDate6_2_3_1"
                             android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:layout_weight="80"
                             android:background="@drawable/border"
                             android:gravity="center"
@@ -4568,7 +4611,7 @@
                         <TextView
                             android:id="@+id/SyouninsyaName6_2_3_1"
                             android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:layout_weight="60"
                             android:background="@drawable/border"
                             android:gravity="center"
@@ -4635,12 +4678,13 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="185"
+                            android:background="@drawable/border"
                             android:text="@string/Daimoku_6_3_1_1" />
 
                         <TextView
                             android:id="@+id/CompletedDate6_3_1_1"
                             android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:layout_weight="80"
                             android:background="@drawable/border"
                             android:gravity="center"
@@ -4649,7 +4693,7 @@
                         <TextView
                             android:id="@+id/SyouninsyaName6_3_1_1"
                             android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:layout_weight="60"
                             android:background="@drawable/border"
                             android:gravity="center"
@@ -4716,12 +4760,13 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="185"
+                            android:background="@drawable/border"
                             android:text="@string/Daimoku_6_4_1_1" />
 
                         <TextView
                             android:id="@+id/CompletedDate6_4_1_1"
                             android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:layout_weight="80"
                             android:background="@drawable/border"
                             android:gravity="center"
@@ -4730,7 +4775,7 @@
                         <TextView
                             android:id="@+id/SyouninsyaName6_4_1_1"
                             android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:layout_weight="60"
                             android:background="@drawable/border"
                             android:gravity="center"
@@ -4755,12 +4800,13 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="185"
+                            android:background="@drawable/border"
                             android:text="@string/Daimoku_6_4_2_1" />
 
                         <TextView
                             android:id="@+id/CompletedDate6_4_2_1"
                             android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:layout_weight="80"
                             android:background="@drawable/border"
                             android:gravity="center"
@@ -4769,7 +4815,7 @@
                         <TextView
                             android:id="@+id/SyouninsyaName6_4_2_1"
                             android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:layout_weight="60"
                             android:background="@drawable/border"
                             android:gravity="center"
@@ -4836,12 +4882,13 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="185"
+                            android:background="@drawable/border"
                             android:text="@string/Daimoku_6_5_1_1" />
 
                         <TextView
                             android:id="@+id/CompletedDate6_5_1_1"
                             android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:layout_weight="80"
                             android:background="@drawable/border"
                             android:gravity="center"
@@ -4850,7 +4897,7 @@
                         <TextView
                             android:id="@+id/SyouninsyaName6_5_1_1"
                             android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:layout_weight="60"
                             android:background="@drawable/border"
                             android:gravity="center"
@@ -4875,12 +4922,13 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="185"
+                            android:background="@drawable/border"
                             android:text="@string/Daimoku_6_5_2_1" />
 
                         <TextView
                             android:id="@+id/CompletedDate6_5_2_1"
                             android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:layout_weight="80"
                             android:background="@drawable/border"
                             android:gravity="center"
@@ -4889,7 +4937,7 @@
                         <TextView
                             android:id="@+id/SyouninsyaName6_5_2_1"
                             android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:layout_weight="60"
                             android:background="@drawable/border"
                             android:gravity="center"
@@ -4956,12 +5004,13 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="185"
+                            android:background="@drawable/border"
                             android:text="@string/Daimoku_6_6_1_1" />
 
                         <TextView
                             android:id="@+id/CompletedDate6_6_1_1"
                             android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:layout_weight="80"
                             android:background="@drawable/border"
                             android:gravity="center"
@@ -4970,7 +5019,7 @@
                         <TextView
                             android:id="@+id/SyouninsyaName6_6_1_1"
                             android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:layout_weight="60"
                             android:background="@drawable/border"
                             android:gravity="center"
@@ -5046,12 +5095,13 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="185"
+                            android:background="@drawable/border"
                             android:text="@string/Daimoku_7_1_1_1" />
 
                         <TextView
                             android:id="@+id/CompletedDate7_1_1_1"
                             android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:layout_weight="80"
                             android:background="@drawable/border"
                             android:gravity="center"
@@ -5060,7 +5110,7 @@
                         <TextView
                             android:id="@+id/SyouninsyaName7_1_1_1"
                             android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:layout_weight="60"
                             android:background="@drawable/border"
                             android:gravity="center"
@@ -5085,12 +5135,13 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="185"
+                            android:background="@drawable/border"
                             android:text="@string/Daimoku_7_1_2_1" />
 
                         <TextView
                             android:id="@+id/CompletedDate7_1_2_1"
                             android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:layout_weight="80"
                             android:background="@drawable/border"
                             android:gravity="center"
@@ -5099,7 +5150,7 @@
                         <TextView
                             android:id="@+id/SyouninsyaName7_1_2_1"
                             android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:layout_weight="60"
                             android:background="@drawable/border"
                             android:gravity="center"
@@ -5166,12 +5217,13 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="185"
+                            android:background="@drawable/border"
                             android:text="@string/Daimoku_7_2_1_1" />
 
                         <TextView
                             android:id="@+id/CompletedDate7_2_1_1"
                             android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:layout_weight="80"
                             android:background="@drawable/border"
                             android:gravity="center"
@@ -5180,7 +5232,7 @@
                         <TextView
                             android:id="@+id/SyouninsyaName7_2_1_1"
                             android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:layout_weight="60"
                             android:background="@drawable/border"
                             android:gravity="center"
@@ -5205,12 +5257,13 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="185"
+                            android:background="@drawable/border"
                             android:text="@string/Daimoku_7_2_2_1" />
 
                         <TextView
                             android:id="@+id/CompletedDate7_2_2_1"
                             android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:layout_weight="80"
                             android:background="@drawable/border"
                             android:gravity="center"
@@ -5219,7 +5272,7 @@
                         <TextView
                             android:id="@+id/SyouninsyaName7_2_2_1"
                             android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:layout_weight="60"
                             android:background="@drawable/border"
                             android:gravity="center"
@@ -5286,12 +5339,13 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="185"
+                            android:background="@drawable/border"
                             android:text="@string/Daimoku_7_3_1_1" />
 
                         <TextView
                             android:id="@+id/CompletedDate7_3_1_1"
                             android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:layout_weight="80"
                             android:background="@drawable/border"
                             android:gravity="center"
@@ -5300,7 +5354,7 @@
                         <TextView
                             android:id="@+id/SyouninsyaName7_3_1_1"
                             android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:layout_weight="60"
                             android:background="@drawable/border"
                             android:gravity="center"
@@ -5367,12 +5421,13 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="185"
+                            android:background="@drawable/border"
                             android:text="@string/Daimoku_7_4_1_1" />
 
                         <TextView
                             android:id="@+id/CompletedDate7_4_1_1"
                             android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:layout_weight="80"
                             android:background="@drawable/border"
                             android:gravity="center"
@@ -5381,7 +5436,7 @@
                         <TextView
                             android:id="@+id/SyouninsyaName7_4_1_1"
                             android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:layout_weight="60"
                             android:background="@drawable/border"
                             android:gravity="center"
@@ -5406,12 +5461,13 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="185"
+                            android:background="@drawable/border"
                             android:text="@string/Daimoku_7_4_2_1" />
 
                         <TextView
                             android:id="@+id/CompletedDate7_4_2_1"
                             android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:layout_weight="80"
                             android:background="@drawable/border"
                             android:gravity="center"
@@ -5420,7 +5476,7 @@
                         <TextView
                             android:id="@+id/SyouninsyaName7_4_2_1"
                             android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:layout_weight="60"
                             android:background="@drawable/border"
                             android:gravity="center"
@@ -5445,12 +5501,13 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="185"
+                            android:background="@drawable/border"
                             android:text="@string/Daimoku_7_4_3_1" />
 
                         <TextView
                             android:id="@+id/CompletedDate7_4_3_1"
                             android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:layout_weight="80"
                             android:background="@drawable/border"
                             android:gravity="center"
@@ -5459,7 +5516,7 @@
                         <TextView
                             android:id="@+id/SyouninsyaName7_4_3_1"
                             android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:layout_weight="60"
                             android:background="@drawable/border"
                             android:gravity="center"
@@ -5526,12 +5583,13 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="185"
+                            android:background="@drawable/border"
                             android:text="@string/Daimoku_7_5_1_1" />
 
                         <TextView
                             android:id="@+id/CompletedDate7_5_1_1"
                             android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:layout_weight="80"
                             android:background="@drawable/border"
                             android:gravity="center"
@@ -5540,7 +5598,7 @@
                         <TextView
                             android:id="@+id/SyouninsyaName7_5_1_1"
                             android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:layout_weight="60"
                             android:background="@drawable/border"
                             android:gravity="center"
@@ -5607,12 +5665,13 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="185"
+                            android:background="@drawable/border"
                             android:text="@string/Daimoku_7_6_1_1" />
 
                         <TextView
                             android:id="@+id/CompletedDate7_6_1_1"
                             android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:layout_weight="80"
                             android:background="@drawable/border"
                             android:gravity="center"
@@ -5621,7 +5680,7 @@
                         <TextView
                             android:id="@+id/SyouninsyaName7_6_1_1"
                             android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:layout_weight="60"
                             android:background="@drawable/border"
                             android:gravity="center"

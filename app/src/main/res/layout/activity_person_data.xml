@@ -8,117 +8,591 @@
     android:orientation="vertical"
     tools:context=".PersonDataActivity">
 
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <TextView
-            android:layout_width="100dp"
-            android:layout_height="wrap_content"
-            android:text="所属"/>
-        <TextView
-            android:id="@+id/Text_Syozoku"
+        android:layout_height="wrap_content">
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <TextView
-            android:layout_width="100dp"
             android:layout_height="wrap_content"
-            android:text="名前"/>
-        <TextView
-            android:id="@+id/Text_Name"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="個人情報" />
+
+            <TableLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <TextView
-            android:layout_width="100dp"
             android:layout_height="wrap_content"
-            android:text="名前(ふりがな)"/>
-        <TextView
-            android:id="@+id/Text_Furigana"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_margin="10dp"
+            android:background="@drawable/table_border"
+            android:padding="1dp">
 
-    </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="350">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="90"
+                    android:background="@drawable/border"
+                    android:gravity="center"
+                    android:text="所属"/>
 
-        <TextView
-            android:layout_width="100dp"
-            android:layout_height="wrap_content"
-            android:text="誕生日"/>
-        <TextView
-            android:id="@+id/Text_Birthday"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/Text_Syozoku"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="260"
+                    android:background="@drawable/border"/>
 
-    </LinearLayout>
+            </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
 
-        <TextView
-            android:layout_width="100dp"
-            android:layout_height="wrap_content"
-            android:text="住所"/>
-        <TextView
-            android:id="@+id/Text_Address"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="90"
+                    android:background="@drawable/border"
+                    android:gravity="center"
+                    android:text="名前"/>
+                <TextView
+                    android:id="@+id/Text_Name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="260"
+                    android:background="@drawable/border"/>
 
-    </LinearLayout>
+            </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
 
-        <TextView
-            android:layout_width="100dp"
-            android:layout_height="wrap_content"
-            android:text="電話番号"/>
-        <TextView
-            android:id="@+id/Text_Tel"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="90"
+                    android:background="@drawable/border"
+                    android:gravity="center"
+                    android:text="名前(かな)"/>
+                <TextView
+                    android:id="@+id/Text_Furigana"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="260"
+                    android:background="@drawable/border"/>
 
-    </LinearLayout>
+            </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
 
-        <TextView
-            android:layout_width="100dp"
-            android:layout_height="wrap_content"
-            android:text="性別"/>
-        <TextView
-            android:id="@+id/Text_Sex"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="90"
+                    android:background="@drawable/border"
+                    android:gravity="center"
+                    android:text="誕生日"/>
+                <TextView
+                    android:id="@+id/Text_Birthday"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="260"
+                    android:background="@drawable/border"/>
 
-    </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="90"
+                    android:background="@drawable/border"
+                    android:gravity="center"
+                    android:text="住所"/>
+                <TextView
+                    android:id="@+id/Text_Address"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="260"
+                    android:background="@drawable/border"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="90"
+                    android:background="@drawable/border"
+                    android:gravity="center"
+                    android:text="電話番号"/>
+                <TextView
+                    android:id="@+id/Text_Tel"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="260"
+                    android:background="@drawable/border"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="90"
+                    android:background="@drawable/border"
+                    android:gravity="center"
+                    android:text="性別"/>
+                <TextView
+                    android:id="@+id/Text_Sex"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="260"
+                    android:background="@drawable/border"/>
+
+            </LinearLayout>
+        </TableLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="スカウト歴" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/table_border"
+                android:padding="1dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="350">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="90"
+                        android:background="@drawable/border"
+                        android:gravity="center"
+                        android:text="誓いをたてた日"/>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="260"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/Text_StateDate"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/border"/>
+
+                        <TextView
+                            android:id="@+id/Text_StateField"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/border"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+            </TableLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="スカウト歴" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/table_border"
+                android:padding="1dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="350">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="90"
+                        android:background="@drawable/border"
+                        android:gravity="center"
+                        android:text="ビーバー"/>
+
+                    <TextView
+                        android:id="@+id/Text_inBVS"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="260"
+                        android:background="@drawable/border"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="350">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="90"
+                        android:background="@drawable/border"
+                        android:gravity="center"
+                        android:text="カブ"/>
+
+                    <TextView
+                        android:id="@+id/Text_inCS"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="260"
+                        android:background="@drawable/border"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="350">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="90"
+                        android:background="@drawable/border"
+                        android:gravity="center"
+                        android:text="ボーイ"/>
+
+                    <TextView
+                        android:id="@+id/Text_inBS"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="260"
+                        android:background="@drawable/border"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="350">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="90"
+                        android:background="@drawable/border"
+                        android:gravity="center"
+                        android:text="ベンチャー"/>
+
+                    <TextView
+                        android:id="@+id/Text_inVS"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="260"
+                        android:background="@drawable/border"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="350">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="90"
+                        android:background="@drawable/border"
+                        android:gravity="center"
+                        android:text="ローバー"/>
+
+                    <TextView
+                        android:id="@+id/Text_inRS"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="260"
+                        android:background="@drawable/border"/>
+
+                </LinearLayout>
+
+            </TableLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="進級" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/table_border"
+                android:padding="1dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="350">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="90"
+                        android:background="@drawable/border"
+                        android:gravity="center"
+                        android:text="見習い"/>
+
+                    <TextView
+                        android:id="@+id/Text_Minarai"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="260"
+                        android:background="@drawable/border"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="350">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="90"
+                        android:background="@drawable/border"
+                        android:gravity="center"
+                        android:text="初級"/>
+
+                    <TextView
+                        android:id="@+id/Text_Basic"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="260"
+                        android:background="@drawable/border"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="350">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="90"
+                        android:background="@drawable/border"
+                        android:gravity="center"
+                        android:text="二級"/>
+
+                    <TextView
+                        android:id="@+id/Text_Second"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="260"
+                        android:background="@drawable/border"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="350">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="90"
+                        android:background="@drawable/border"
+                        android:gravity="center"
+                        android:text="一級"/>
+
+                    <TextView
+                        android:id="@+id/Text_First"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="260"
+                        android:background="@drawable/border"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="350">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="90"
+                        android:background="@drawable/border"
+                        android:gravity="center"
+                        android:text="菊"/>
+
+                    <TextView
+                        android:id="@+id/Text_Kiku"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="260"
+                        android:background="@drawable/border"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="350">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="90"
+                        android:background="@drawable/border"
+                        android:gravity="center"
+                        android:text="隼"/>
+
+                    <TextView
+                        android:id="@+id/Text_Hayabusa"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="260"
+                        android:background="@drawable/border"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="350">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="90"
+                        android:background="@drawable/border"
+                        android:gravity="center"
+                        android:text="富士"/>
+
+                    <TextView
+                        android:id="@+id/Text_Fuji"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="260"
+                        android:background="@drawable/border"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="350">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="90"
+                        android:background="@drawable/border"
+                        android:gravity="center"
+                        android:text="信仰奨励"/>
+
+                    <TextView
+                        android:id="@+id/Text_SinkouSyourei"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="260"
+                        android:background="@drawable/border"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="350">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="90"
+                        android:background="@drawable/border"
+                        android:gravity="center"
+                        android:text="宗教章"/>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="260"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/Text_Syukyou"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:background="@drawable/border"/>
+
+                        <TextView
+                            android:id="@+id/Text_SyukyouName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:background="@drawable/border"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
 
 
+            </TableLayout>
+
+        </LinearLayout>
+    </ScrollView>
 </LinearLayout>
