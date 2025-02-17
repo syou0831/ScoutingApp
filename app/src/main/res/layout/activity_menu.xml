@@ -11,32 +11,55 @@
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="match_parent"
-        android:layout_height="64dp"
+        android:layout_height="100dp"
         app:srcCompat="@drawable/bs_logo"
+        android:paddingTop="25dp"
         android:background="@color/bsLogo"/>
 
     <Button
         android:id="@+id/button_PersonData"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:backgroundTint="@color/bsLogo"
+        android:layout_margin="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/custom_button"
+        app:backgroundTint="@null"
+        android:textSize="36dp"
+        android:fontFamily="@font/font"
         android:text="自分の情報" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/custom_button"
+        app:backgroundTint="@null"
+        android:textSize="36dp"
+        android:fontFamily="@font/font"
         android:text="連絡網" />
 
     <Button
         android:id="@+id/button_saimoku"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/custom_button"
+        app:backgroundTint="@null"
+        android:textSize="36dp"
+        android:fontFamily="@font/font"
         android:text="進級細目" />
 
     <Button
         android:id="@+id/button2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/custom_button"
+        app:backgroundTint="@null"
+        android:textSize="36dp"
+        android:fontFamily="@font/font"
         android:text="活動予定" />
 
 </LinearLayout>

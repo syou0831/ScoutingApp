@@ -11,8 +11,9 @@
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="match_parent"
-        android:layout_height="64dp"
+        android:layout_height="100dp"
         app:srcCompat="@drawable/bs_logo"
+        android:paddingTop="25dp"
         android:background="@color/bsLogo"/>
 
     <Spinner

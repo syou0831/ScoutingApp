@@ -13,6 +13,7 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
 import android.view.textclassifier.TextLinks;
 import android.widget.Button;
 import android.widget.DatePicker;
@@ -21,6 +22,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
+import androidx.activity.OnBackPressedCallback;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
@@ -54,6 +56,22 @@ public class SaimokuUpdateActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+
+        OnBackPressedCallback callback = new OnBackPressedCallback(true /* enabled by default */) {
+            @Override
+            public void handleOnBackPressed() {
+                Intent intent = new Intent(SaimokuUpdateActivity.this, SaimokuActivity.class);
+                intent.putExtra("PersonID", intent.getIntExtra("PID",0));
+                startActivity(intent);
+            }
+        };
+
+        getWindow().getDecorView().setSystemUiVisibility(
+                View.SYSTEM_UI_FLAG_FULLSCREEN |
+                        View.SYSTEM_UI_FLAG_HIDE_NAVIGATION |
+                        View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY
+        );
+
 
         Intent intent = getIntent();
         int PersonID = intent.getIntExtra("PID",0);
@@ -90,8 +108,11 @@ public class SaimokuUpdateActivity extends AppCompatActivity {
 
             String date = ((TextView) findViewById(R.id.testText)).getText().toString();
 
-            if(!isEmpty(name) && !isEmpty(date)) {
-
+            if(isEmpty(name)) {
+                Toast.makeText(this,"名前が未入力",Toast.LENGTH_SHORT).show();
+            } else if (isEmpty(date) || date.equals("未入力")) {
+                Toast.makeText(this,"日付が未入力",Toast.LENGTH_SHORT).show();
+            }else{
                 Uri.Builder uriBuilder = new Uri.Builder();
                 uriBuilder.scheme("https");
                 uriBuilder.encodedAuthority("23cm0117.main.jp");
@@ -106,16 +127,14 @@ public class SaimokuUpdateActivity extends AppCompatActivity {
 
                 Log.d("TAG", "JSON_URL: " + uriBuilder);
 
-                saveData(uriBuilder);
+                saveData(uriBuilder, PersonID);
                 Log.d("TAG", "onCreate: インサート完了");
-            }else{
-                Toast.makeText(this,"未入力があります",Toast.LENGTH_SHORT).show();
             }
         });
 
     }
 
-    private void saveData(Uri.Builder uriBuilder){
+    private void saveData(Uri.Builder uriBuilder, int PersonID){
         final FormBody.Builder formBuilder = new FormBody.Builder();
         RequestBody requestBody = formBuilder.build();
 
@@ -130,13 +149,17 @@ public class SaimokuUpdateActivity extends AppCompatActivity {
             @Override
             public void onResponse(Call call, Response response) throws IOException {
                 final String resString = response.body().string();
-                Log.d("TAG", resString);
+                Log.d("TAG", "ここで戻る？");
             }
             @Override
             public void onFailure(Call call, IOException arg1){
             }
         });
-        finish();
+        Log.d("TAG", "こっち？ ");
+        Log.d("TAG", "細目表示 ");
+        Intent intent = new Intent(SaimokuUpdateActivity.this, SaimokuActivity.class);
+        intent.putExtra("PersonID",PersonID);
+        startActivity(intent);
     }
 
 

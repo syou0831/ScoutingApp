@@ -13,6 +13,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -44,6 +45,12 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
 
+        getWindow().getDecorView().setSystemUiVisibility(
+                View.SYSTEM_UI_FLAG_FULLSCREEN |
+                        View.SYSTEM_UI_FLAG_HIDE_NAVIGATION |
+                        View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY
+        );
+
         EditText editID = findViewById(R.id.loginID);
         EditText editPassword = findViewById(R.id.loginPassword);
 
@@ -66,6 +73,8 @@ public class MainActivity extends AppCompatActivity {
                     Intent intent = new Intent(MainActivity.this, menuActivity.class);
                     startActivity(intent);
                 }
+            }else {
+                Toast.makeText(this, "ID、またはパスワードが未入力あるいは誤っています", Toast.LENGTH_SHORT).show();
             }
         });
     }

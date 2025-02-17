@@ -11,14 +11,17 @@
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="match_parent"
-        android:layout_height="64dp"
+        android:layout_height="100dp"
         app:srcCompat="@drawable/bs_logo"
+        android:paddingTop="25dp"
         android:background="@color/bsLogo"/>
 
     <EditText
         android:id="@+id/loginID"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
         android:hint="ID"/>
 
     <EditText
@@ -26,12 +29,21 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="textPassword"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
         android:hint="パスワード"/>
 
     <Button
         android:id="@+id/loginSubmitButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:textSize="36dp"
+        android:background="@drawable/custom_button"
+        app:backgroundTint="@null"
+        android:fontFamily="@font/font"
         android:text="ログイン"/>
 
 </LinearLayout>

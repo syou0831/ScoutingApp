@@ -17,6 +17,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
+import androidx.activity.OnBackPressedCallback;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
@@ -51,6 +52,21 @@ public class SaimokuActivity extends AppCompatActivity {
 
         PersonID = getIntent().getIntExtra("PersonID", 0);
         Log.d(TAG, "onCreate:" + PersonID);
+
+        OnBackPressedCallback callback = new OnBackPressedCallback(true /* enabled by default */) {
+            @Override
+            public void handleOnBackPressed() {
+                Intent intent = new Intent(SaimokuActivity.this, menuActivity.class);
+                intent.putExtra("PersonID", PersonID);
+                startActivity(intent);
+            }
+        };
+
+        getWindow().getDecorView().setSystemUiVisibility(
+                View.SYSTEM_UI_FLAG_FULLSCREEN |
+                        View.SYSTEM_UI_FLAG_HIDE_NAVIGATION |
+                        View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY
+        );
 
         Uri.Builder uriBuilder = new Uri.Builder();
         uriBuilder.scheme("http");
