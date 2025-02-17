@@ -6,4 +6,7 @@
     </style>
 
     <style name="Theme.ScoutApp" parent="Base.Theme.ScoutApp" />
+
+
+
 </resources>
