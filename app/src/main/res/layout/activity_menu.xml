@@ -8,6 +8,13 @@
     android:orientation="vertical"
     tools:context=".menuActivity">
 
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        app:srcCompat="@drawable/bs_logo"
+        android:background="@color/bsLogo"/>
+
     <Button
         android:id="@+id/button_PersonData"
         android:layout_width="match_parent"

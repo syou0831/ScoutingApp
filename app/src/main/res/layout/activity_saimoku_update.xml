@@ -8,6 +8,13 @@
     android:orientation="vertical"
     tools:context=".SaimokuUpdateActivity">
 
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        app:srcCompat="@drawable/bs_logo"
+        android:background="@color/bsLogo"/>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

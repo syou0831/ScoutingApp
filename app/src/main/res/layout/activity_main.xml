@@ -8,6 +8,13 @@
     android:orientation="vertical"
     tools:context=".MainActivity" >
 
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        app:srcCompat="@drawable/bs_logo"
+        android:background="@color/bsLogo"/>
+
     <EditText
         android:id="@+id/loginID"
         android:layout_width="match_parent"
